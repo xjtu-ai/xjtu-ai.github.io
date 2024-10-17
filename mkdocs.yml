@@ -39,27 +39,27 @@ nav:
     - 简介: index.md
   - 课程: 
     - 高数上: 
-      - 课程简介: math/index.md
-      - 往届资料收集: math/docs.md
-      - 课件&讲座: math/ppt.md
-      - 真题: math/problem.md
-      - 电子书: math/ebook.md
+      - 课程简介: course/math/index.md
+      - 往届资料收集: course/math/docs.md
+      - 课件&讲座: course/math/ppt.md
+      - 真题: course/math/problem.md
+      - 电子书: course/math/ebook.md
     - 线性代数与解析几何: 
-      - 课程简介: algebra/index.md
-      - 往届资料收集: algebra/docs.md
-      - 课件: algebra/ppt.md
-      - 真题&练习: algebra/problem.md
+      - 课程简介: course/algebra/index.md
+      - 往届资料收集: course/algebra/docs.md
+      - 课件: course/algebra/ppt.md
+      - 真题&练习: course/algebra/problem.md
     - 计算机程序设计: 
-      - 课程简介: program/index.md
-      - 往届资料收集: program/docs.md
-      - 真题: program/problem.md
+      - 课程简介: course/program/index.md
+      - 往届资料收集: course/program/docs.md
+      - 真题: course/program/problem.md
     - 近代史纲要: 
-      - 课程简介: history/index.md
-      - 往届资料收集: history/docs.md
-      - 真题: history/problem.md
+      - 课程简介: course/history/index.md
+      - 往届资料收集: course/history/docs.md
+      - 真题: course/history/problem.md
     - 思修:
-      - 课程简介: sixiu/index.md
-      - 往届资料收集: sixiu/docs.md
+      - 课程简介: course/sixiu/index.md
+      - 往届资料收集: course/sixiu/docs.md
 
 markdown_extensions:
   - admonition

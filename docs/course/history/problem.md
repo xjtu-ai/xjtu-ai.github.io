@@ -3,4 +3,4 @@
 ## 政论文留档
 
 ??? note "政论文留档"
-    <iframe src="/history/problem/政论文留档.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe src="/course/history/problem/政论文留档.pdf" type="application/pdf" width=100% height=1000px></iframe>
