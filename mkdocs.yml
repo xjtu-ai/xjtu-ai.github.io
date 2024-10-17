@@ -1,0 +1,61 @@
+site_name: AI Wiki of XJTU
+site_url: http://xjtu-ai.github.io
+theme:
+  name: material
+  features:
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - 课程: 
+    - 高数上: 
+      - 课程简介: math/index.md
+      - 往届资料收集: math/docs.md
+      - 课件&讲座: math/ppt.md
+      - 真题: math/problem.md
+      - 电子书: math/ebook.md
+    - 线性代数与解析几何: 
+      - 课程简介: algebra/index.md
+    - 计算机程序设计: 
+      - 课程简介: program/index.md
+      - 往届资料收集: program/docs.md
+      - 真题: program/problem.md
+    - 近代史纲要: 
+      - 课程简介: history/index.md
+      - 往届资料收集: history/docs.md
+      - 真题: history/problem.md
+    - 思修:
+      - 课程简介: sixiu/index.md
+      - 往届资料收集: sixiu/docs.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js
