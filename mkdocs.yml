@@ -1,12 +1,42 @@
 site_name: AI Wiki of XJTU
 site_url: http://xjtu-ai.github.io
+repo_name: xjtu-ai/xjtu-ai.github.io
+repo_url: https://github.com/xjtu-ai/xjtu-ai.github.io
+edit_uri: blob/master/docs/
+site_description: 人智学组资料收集网站
+site_author: 西安交通大学人工智能学组
+
 theme:
   name: material
   features:
     - content.code.copy
+    - content.action.edit
+    - navigation.tabs
+    - navigation.instant
+
+  language: 'zh'
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
 
 nav:
-  - Home: index.md
+  - AI Wiki of XJTU: 
+    - 简介: index.md
   - 课程: 
     - 高数上: 
       - 课程简介: math/index.md
