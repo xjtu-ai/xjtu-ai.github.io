@@ -4,7 +4,7 @@
 
 ```bash
 git clone https://github.com/xjtu-ai/xjtu-ai.github.io.git
-cd xjtu-ai.github.io.git
+cd xjtu-ai.github.io
 ```
 
 ## 安装依赖
