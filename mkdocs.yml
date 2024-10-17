@@ -35,6 +35,9 @@ nav:
     - 思修:
       - 课程简介: course/sixiu/index.md
       - 往届资料收集: course/sixiu/docs.md
+    - 工程伦理:
+      - 课程简介: course/lunli/index.md
+      - 课件: course/lunli/ppt.md
 
 theme:
   name: material
