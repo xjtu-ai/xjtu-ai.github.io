@@ -37,6 +37,7 @@ theme:
 nav:
   - AI Wiki of XJTU: 
     - 简介: index.md
+    - 贡献: contribute.md
   - 课程: 
     - 高数上: 
       - 课程简介: course/math/index.md
