@@ -1,11 +1,22 @@
-AI 学组欢迎一切形式的一切贡献。如果你觉得这些流程太麻烦，可以直接轰炸网站的现任维护者 [@ShwStone](https://github.com/ShwStone)。
+AI 学组欢迎一切形式的一切贡献。**如果你觉得这些流程太麻烦，可以直接轰炸网站的现任维护者 [@ShwStone](https://github.com/ShwStone)**。
 
 本页面参考了 [**OI-wiki**](https://oi-wiki.org/intro/htc/)。
+
+## 也许会有帮助
+
+在编写过程中，你可能会需要阅读这些文档：
+
+- **[Github Skills](https://skills.github.com/)**
+- **[MkDocs](https://www.mkdocs.org/getting-started/)**
+- **[MkDocs Material](https://squidfunk.github.io/mkdocs-material/creating-your-site/)**
+- [$\LaTeX$](https://oi-wiki.org/tools/latex/)
 
 ## 参与协作
 
 ???+ warning
     在开始编写一段内容之前，请查阅 [Issues](https://github.com/xjtu-ai/xjtu-ai.github.io/issues)，或者加入 QQ 群，确认没有别人在做相同的工作之后，开个 [新 issue](https://github.com/xjtu-ai/xjtu-ai.github.io/issues/new) 记录待编写的内容。
+
+请确保阅读了 **[格式规范](./format.md)**。其实没有什么需要刻意遵守的规则，格式规范更多是教你如何使用 Markdown。
 
 不要害怕编辑，勇于更新页面！
 
@@ -49,6 +60,8 @@ AI 学组欢迎一切形式的一切贡献。如果你觉得这些流程太麻�
 5.  这时你的更改会被自动追加在您的 Pull Request 中。
 
 ### 使用 Git 在本地进行编辑
+
+可以参考 **[本地部署](./compile.md)**
 
 ???+ warning
     由于 pdf 文件巨大，我们 **强烈推荐** 使用 Github 进行编辑。如果您仍希望在本地编辑，请注意不要修改包含大量 pdf 文件的目录名，这将导致储存库大小指数级增加。
