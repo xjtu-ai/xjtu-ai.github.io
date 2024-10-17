@@ -46,6 +46,9 @@ nav:
       - 电子书: math/ebook.md
     - 线性代数与解析几何: 
       - 课程简介: algebra/index.md
+      - 往届资料收集: algebra/docs.md
+      - 课件: algebra/ppt.md
+      - 真题&练习: algebra/problem.md
     - 计算机程序设计: 
       - 课程简介: program/index.md
       - 往届资料收集: program/docs.md
