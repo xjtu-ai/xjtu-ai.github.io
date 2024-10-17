@@ -3,10 +3,10 @@
 ## 第四章习题课
 
 ??? note "第四章习题课"
-    <iframe src="/course/algebra/ppt/第四章习题课.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/course/algebra/ppt/第四章习题课.pdf" type="application/pdf" width=100% height=1000px></iframe>
 
 ## 第五章开始习题课
 
 ??? note "第五章开始习题课"
-    <iframe src="/course/algebra/ppt/第五章开始习题课.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/course/algebra/ppt/第五章开始习题课.pdf" type="application/pdf" width=100% height=1000px></iframe>
 

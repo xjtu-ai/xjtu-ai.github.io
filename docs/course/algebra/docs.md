@@ -5,21 +5,21 @@
 本文档是一份线性代数的学习辅导资料，由西安交通大学仲英学业辅导中心编写，涵盖了从第四章到第八章的线性代数核心内容。第四章介绍了n维向量与线性方程组，包括知识点总结、例题详解和练习题。第五章讲述了线性空间与欧氏空间，解释了线性空间的定义、性质、子空间、基与维数等概念，并包含了丰富的例题和练习题。第六章专注于特征值与特征向量，提供了相关概念、求解方法和性质，以及对应的例题。第七章探讨了二次曲面与二次型，包括曲面和空间曲线的方程、柱面、锥面、旋转面以及二次型的标准型等。第八章介绍了线性变换及其运算，包括线性变换的定义、性质、矩阵表示和秩加零度定理。文档最后提供了学业辅导中心的联系方式和相关学习资源，旨在帮助学生理解和掌握线性代数的关键概念和解题技巧。
 
 ??? note "2019期末小助手"
-    <iframe src="/course/algebra/docs/2019期末小助手.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/course/algebra/docs/2019期末小助手.pdf" type="application/pdf" width=100% height=1000px></iframe>
 
 ## 2019期中小助手
 
 《线性代数小助手》是一份由西安交通大学仲英学业辅导中心编写的学习资料，旨在帮助学生学习线性代数。资料涵盖了行列式、矩阵、向量及其运算等核心主题，并通过典型例题和习题讲解来加深理解。编写团队由不同专业背景的学生组成，排版由数学试验班81级的王辰扬负责。资料自第三周起，每晚19:30-21:30在东21舍118学辅办公室提供线下答疑，同时设有线上答疑平台。学业辅导中心还举办各类讲座和交流活动，相关信息会在学粉群和公众号上发布。资料中的错误可通过电邮反馈，以便修订。本资料首次采用LaTeX排版，可能存在错误，编者欢迎学生提出宝贵意见。
 
 ??? note "2019期中小助手"
-    <iframe src="/course/algebra/docs/2019期中小助手.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/course/algebra/docs/2019期中小助手.pdf" type="application/pdf" width=100% height=1000px></iframe>
 
 ## 典型行列式的计算方法
 
 本文归纳总结了计算行列式的多种方法，并举例说明了它们的应用。文中介绍了基本的计算方法如化三角形法、按行（列）展开法，以及递推法、加边法、拆行（列）法、数学归纳法等。特别提到了范德蒙行列式和利用矩阵特征值与行列式的关系进行计算的方法。文中强调了在实际计算中，应根据行列式的特点灵活选择合适的方法，有时需要多种方法结合使用。通过丰富的实例，展示了如何有效计算各类行列式，并对某些特殊类型的行列式进行了详细的分析和计算。这些方法对于解决高阶和复杂结构的行列式问题具有重要的指导意义。
 
 ??? note "典型行列式的计算方法"
-    <iframe src="/course/algebra/docs/典型行列式的计算方法.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/course/algebra/docs/典型行列式的计算方法.pdf" type="application/pdf" width=100% height=1000px></iframe>
 
 ## 计试资料编辑组_线代第一学期期中
 
@@ -30,7 +30,7 @@
 此外，文档还提供了线性代数辅导书题目精选，包括行列式的计算、矩阵的乘法和逆矩阵等，以及几何向量的应用问题。这些问题覆盖了线性代数的基础概念和运算，旨在帮助学生理解和掌握线性代数的核心内容。
 
 ??? note "计试资料编辑组_线代第一学期期中"
-    <iframe src="/course/algebra/docs/计试资料编辑组_线代第一学期期中.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/course/algebra/docs/计试资料编辑组_线代第一学期期中.pdf" type="application/pdf" width=100% height=1000px></iframe>
 
 ## 矩阵常考知识点
 
@@ -46,21 +46,21 @@
 这些知识点是线性代数中矩阵理论的基础，对于理解和应用矩阵运算非常重要。
 
 ??? note "矩阵常考知识点"
-    <iframe src="/course/algebra/docs/矩阵常考知识点.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/course/algebra/docs/矩阵常考知识点.pdf" type="application/pdf" width=100% height=1000px></iframe>
 
 ## [钱学组]10.21线性代数期中讲座(有墨迹版)
 
 本讲座内容涵盖了线性代数与解析几何的重要知识点和经典题型。首先，介绍了行列式的定义、性质、应用，包括求导、展开、Cramer法则解方程组、经典行列式模型等。接着，讲解了矩阵的运算，如加减、数乘、乘法、转置、伴随矩阵、求逆等，以及矩阵分块、初等变换和初等矩阵、阶梯形矩阵和行最简形矩阵。矩阵的秩、方程组解法、GH分解等应用也被提及。此外，还探讨了几何向量及其应用，包括向量共线、方向角和方向向量、数量积、向量积、混合积、平面和直线方程、平面束等。最后，提供了经典题型的解题思路，如证明矩阵对称性、可逆性、求行列式和逆矩阵、方程组解的存在性问题等。讲座旨在帮助学生掌握线性代数与解析几何的核心概念和解题技巧，为考试做好准备。
 
 ??? note "[钱学组]10.21线性代数期中讲座(有墨迹版)"
-    <iframe src="/course/algebra/docs/[钱学组]10.21线性代数期中讲座(有墨迹版).pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/course/algebra/docs/[钱学组]10.21线性代数期中讲座(有墨迹版).pdf" type="application/pdf" width=100% height=1000px></iframe>
 
 ## 【钱学组】线性代数期中讲座
 
 本文件是一份线性代数与解析几何的期中考试复习讲座资料，由马钶淳于2021年10月24日为智电钱（能动）001班准备。内容涵盖了重点概念回顾、例题解析和试卷解读三部分。重点概念包括行列式、矩阵、解析几何等，详细解释了行列式的多种类型和计算方法，矩阵的基本运算和性质，以及解析几何中向量的概念和运算。例题解析部分提供了多个典型题目的解题思路和答案，涉及行列式、矩阵运算、向量积等。试卷解读则对考试题型和考点进行了分析。文档最后提供了讲师的QQ联系方式。整体而言，这份资料为学生提供了全面的复习指导和解题技巧。
 
 ??? note "【钱学组】线性代数期中讲座"
-    <iframe src="/course/algebra/docs/【钱学组】线性代数期中讲座.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/course/algebra/docs/【钱学组】线性代数期中讲座.pdf" type="application/pdf" width=100% height=1000px></iframe>
 
 ## 缺项的范德蒙行列式的计算
 
@@ -75,28 +75,28 @@
 这种方法巧妙地将问题转化为求解多项式系数，从而简化了求解过程。
 
 ??? note "缺项的范德蒙行列式的计算"
-    <iframe src="/course/algebra/docs/缺项的范德蒙行列式的计算.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/course/algebra/docs/缺项的范德蒙行列式的计算.pdf" type="application/pdf" width=100% height=1000px></iframe>
 
 ## 线代期中讲义
 
 本文件是一份线性代数期中复习讲义，内容涵盖了行列式、矩阵和空间解析几何的基本概念和计算方法。第一章主要介绍了行列式的定义、性质、计算方法，包括上三角行列式法、通减法、通加法、升阶法和范德蒙行列式。特别强调了乘积顺序的重要性，并提到了克莱姆法则。第二章讨论了矩阵运算、逆矩阵、分块矩阵、初等变换及初等矩阵，强调了矩阵的秩。第三章则涉及向量及其运算、点、直线与平面等空间解析几何的基础知识。讲义还提到了行列式为0时线性方程组的解的情况，以及初等矩阵在考试中的相关题目。
 
 ??? note "线代期中讲义"
-    <iframe src="/course/algebra/docs/线代期中讲义.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/course/algebra/docs/线代期中讲义.pdf" type="application/pdf" width=100% height=1000px></iframe>
 
 ## 线代入门讲义_1.0
 
 彭康书院学业辅导与发展中心编写的《线性代数与解析几何入门讲义》旨在帮助西安交通大学学生掌握线性代数与解析几何的基础知识。讲义内容涵盖了行列式、矩阵及其运算、逆矩阵、初等变换、分块矩阵、矩阵的秩、向量及其运算、数量积、向量积、混合积、平面与空间直线等多个主题。每个章节都包含了知识点概览、背景叙述、具体知识点讲解以及结论和习题结构的整合。讲义强调数学知识与自然语言的结合，旨在提高学生的学习兴趣和理解深度。编写团队由不同专业的学生组成，他们分享了自己的学习体验和感悟，并提供了联系方式以便学生交流和反馈。讲义最后鼓励学生加入彭康学业辅导与发展中心进行更深入的学习交流。
 
 ??? note "线代入门讲义_1.0"
-    <iframe src="/course/algebra/docs/线代入门讲义_1.0.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/course/algebra/docs/线代入门讲义_1.0.pdf" type="application/pdf" width=100% height=1000px></iframe>
 
 ## 线性代数备考建议-周郑洋
 
 复习线性代数时，建议先从掌握不好的章节开始，由难到易，穿插不同章节复习，以检验知识掌握情况。复习内容应包括课本、课堂笔记和课后习题，注意总结归纳线代题目解法。完成课本习题后，可做往年题来找出薄弱环节。利用学校提供的“线性代数与解析几何”MOOC和第十五周课件中的往年题及讲解，有助于提高复习效果。
 
 ??? note "线性代数备考建议-周郑洋"
-    <iframe src="/course/algebra/docs/线性代数备考建议-周郑洋.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/course/algebra/docs/线性代数备考建议-周郑洋.pdf" type="application/pdf" width=100% height=1000px></iframe>
 
 ## 线性代数期末讲座（第六到七章）
 
@@ -105,7 +105,7 @@
 讲座详细讲解了特征值与特征向量、相似及相似对角化、二次型等概念，并通过多个例子（例1至例18）来阐述这些概念。特别指出正定矩阵必须是实对称矩阵，而实对称矩阵可以相似对角化。讲座还探讨了矩阵的四种关系和三种类型，包括正定矩阵的判定方法，如定义法、特征值大于0、顺序主子式大于0等。此外，还讨论了秩为1的矩阵的性质和证明正定矩阵的方法。
 
 ??? note "线性代数期末讲座（第六到七章）"
-    <iframe src="/course/algebra/docs/线性代数期末讲座（第六到七章）.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/course/algebra/docs/线性代数期末讲座（第六到七章）.pdf" type="application/pdf" width=100% height=1000px></iframe>
 
 ## 线性代数知识点
 
@@ -126,5 +126,5 @@
 讲义内容详尽，提供了线性代数的全面复习资料，适合考研学生系统学习和巩固知识点。
 
 ??? note "线性代数知识点"
-    <iframe src="/course/algebra/docs/线性代数知识点.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/course/algebra/docs/线性代数知识点.pdf" type="application/pdf" width=100% height=1000px></iframe>
 

@@ -11,12 +11,12 @@
 最后，文档简要提及了其他可能考查的内容，如文件读写、枚举与共用体等，并包含了一些小测试和例子来帮助理解。整体而言，这份资料适合需要复习C++基础知识和进阶特性的学习者。
 
 ??? note "C++程序设计-绩点与寄点"
-    <iframe src="/course/program/docs/C++程序设计-绩点与寄点.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/course/program/docs/C++程序设计-绩点与寄点.pdf" type="application/pdf" width=100% height=1000px></iframe>
 
 ## C++程序设计自救指南
 
 这篇《C++程序设计自救指南》主要针对编程初学者和“半熟菜鸟”，提供了一种系统化的程序设计方法和调试技巧。文章强调了理解数据类型、逻辑语句和输入输出方法的重要性，并指出了程序设计的核心在于将复杂问题分解为简单子问题的能力。文中介绍了如何编写伪代码和注释，以及如何规范变量命名和使用临时值、传递值、输出值。通过一个具体的例子，展示了如何将问题分解并逐步实现程序。此外，还讨论了遍历、使用count和flag变量、避免使用库函数、即时输出和背诵模板代码等进阶技巧。最后，文章提供了常见编程错误的检查列表和调试建议，以及如何正确使用printf进行格式化输出。整体而言，这篇文章是一份实用的C++编程入门和问题解决指南。
 
 ??? note "C++程序设计自救指南"
-    <iframe src="/course/program/docs/C++程序设计自救指南.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/course/program/docs/C++程序设计自救指南.pdf" type="application/pdf" width=100% height=1000px></iframe>
 
