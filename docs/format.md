@@ -14,7 +14,7 @@
 PDF 文档的摘要
 
 ??? note "PDF 文档的标题"
-    <iframe loading="lazy" src="PDF 文档的绝对路径（从网站根目录开始，如/course/math/docs/巧用换元积分法一题九解.pdf）"></iframe>
+    <iframe loading="lazy" src="PDF 文档的绝对路径（从网站根目录开始，如/static/course/math/docs/巧用换元积分法一题九解.pdf）"></iframe>
 ```
 
 这使用一个默认不展开的 note 包裹 pdf 文件。`??? note` 是 mkdocs 支持的语法，可以查看 [MkDocs Material 文档](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)。
@@ -29,7 +29,7 @@ PDF 文档的摘要
     本文探讨了换元积分法在解决不定积分问题中的应用和技巧。作者通过一道具体的积分习题，展示了九种不同的换元积分解法，包括三角代换、双曲代换、倒代换等常用技巧。这些方法涉及将被积函数变形以适应基本积分公式，以及通过分解被积函数并逐步凑微元变形来解决积分问题。文章强调，不定积分的结果是一个原函数的集合，通常表示为一个原函数加上任意常数。重要的是，只要积分结果的导数等于被积函数，该结果就是正确的，即使形式上可能与参考答案不同。通过这些解法，作者旨在提高学生在积分方面的水平，鼓励他们在实践中探索和总结换元积分的技巧。
     
     ??? note "巧用换元积分法一题九解"
-        <iframe loading="lazy" src="/course/math/docs/巧用换元积分法一题九解.pdf" type="application/pdf" width=100% height=1000px></iframe>
+        <iframe loading="lazy" src="/static/course/math/docs/巧用换元积分法一题九解.pdf" type="application/pdf" width=100% height=1000px></iframe>
 
 ### 自动生成脚本
 
@@ -43,7 +43,7 @@ PDF 文档的摘要
     import os
     
     key = None # 或者填入 API key
-    outdir = # pdf 的绝对路径（不包含文件名），如'/course/math/docs'
+    outdir = # pdf 的绝对路径（不包含文件名），如'/static/course/math/docs'
     if outdir == None :
         outdir = '/'
     path = Path(sys.argv[1])

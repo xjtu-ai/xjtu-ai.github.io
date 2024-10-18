@@ -5,5 +5,5 @@
 《中国近现代史纲要》总结了自1840年鸦片战争以来中国社会的性质变化、阶级关系、主要矛盾和历史任务。文中分析了资本-帝国主义列强的侵略方式及中国人民的反侵略斗争，强调了反侵略战争失败的教训和社会制度的腐朽。探讨了太平天国运动、洋务运动、戊戌维新、辛亥革命等历史事件的意义、失败原因及教训。特别指出中国共产党的成立是开天辟地的大事变，概述了中国共产党人的初心使命和中国革命的新面貌。文中还论述了长征的意义、抗日战争的民族解放性质、中国共产党在抗战中的中流砥柱作用，以及解放战争的胜利原因和意义，强调了中国共产党领导的多党合作和政治协商制度的形成。
 
 ??? note "中国近现代史纲要"
-    <iframe loading="lazy" src="/course/history/docs/中国近现代史纲要.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/static/course/history/docs/中国近现代史纲要.pdf" type="application/pdf" width=100% height=1000px></iframe>
 
