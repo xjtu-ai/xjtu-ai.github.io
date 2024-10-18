@@ -1,0 +1,3 @@
+[submodule "docs/static"]
+	path = docs/static
+	url = https://github.com/xjtu-ai/static.git
