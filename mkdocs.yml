@@ -13,6 +13,7 @@ nav:
     - 格式规范: format.md
     - 本地部署: compile.md
   - 课程: 
+    - 简介: course/index.md
     - 高数上: 
       - 课程简介: course/math/index.md
       - 往届资料收集: course/math/docs.md
@@ -38,6 +39,15 @@ nav:
     - 工程伦理:
       - 课程简介: course/lunli/index.md
       - 课件: course/lunli/ppt.md
+  - 竞赛:
+    - 简介: competition/index.md
+    - 数学建模: competition/math.md
+    - 蓝桥杯: competition/lanqiao.md
+    - CCPC/ICPC: competition/xcpc.md
+    - 物理学术竞赛: competition/physics.md
+    - 教育信息技术应用创新大赛: competition/xinchuang.md
+    - 华为 ICT 大赛: competition/ict.md
+    - 3D 设计大赛: competition/3d.md
 
 theme:
   name: material
