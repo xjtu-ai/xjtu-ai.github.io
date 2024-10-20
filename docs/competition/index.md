@@ -3,6 +3,6 @@
 保研的加分细则如下：
 
 ??? note "加分细则"
-    <iframe loading="lazy" src="/static/competition/score.pdf）"></iframe>
+    <iframe loading="lazy" src="/static/competition/score.pdf"></iframe>
 
 此章节列出了人工智能学院相关的竞赛内容。
