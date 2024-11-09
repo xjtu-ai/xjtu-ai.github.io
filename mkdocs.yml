@@ -40,6 +40,7 @@ nav:
     - 工程伦理:
       - 课程简介: course/lunli/index.md
       - 课件: course/lunli/ppt.md
+      - 复习资料: course/lunli/docs.md
   - 竞赛:
     - 简介: competition/index.md
     - 数学建模: competition/math.md
