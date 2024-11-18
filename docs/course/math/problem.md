@@ -1,5 +1,10 @@
 此页面收集了往届高数学科的真题。请读者自行取用。
 
+## 【AI学组】2023年高数上期中真题解析（定稿）
+
+??? note "2013高数上期中试题及解析"
+    <iframe loading="lazy" src="/static/course/math/problem/【AI学组】2023年高数上期中真题解析（定稿）.pdf" type="application/pdf" width=100% height=1000px></iframe>
+
 ## 2013高数上期中试题及解析
 
 ??? note "2013高数上期中试题及解析"
