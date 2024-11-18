@@ -19,6 +19,7 @@ pip install mkdocs-material mkdocs-material-extensions mkdocs-material-pymdownx-
 
 ```bash
 git submodule sync
+git submodule update --init --recursive
 mkdocs serve # server on localhost:8000
 ```
 
@@ -28,5 +29,6 @@ mkdocs serve # server on localhost:8000
 
 ```bash
 git submodule sync
+git submodule update --init --recursive
 mkdocs build
 ```
