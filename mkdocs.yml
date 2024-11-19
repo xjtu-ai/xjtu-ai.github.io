@@ -54,6 +54,7 @@ nav:
     - 机器人竞赛: competition/robot.md
     - 挑战杯: competition/tiaozhan.md
     - 全国大学生节能减排社会实践与科技竞赛: competition/jieneng.md
+    - 全国大学生数学竞赛: competition/cmc.md
 
 theme:
   name: material
