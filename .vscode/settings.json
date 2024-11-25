@@ -1,5 +1,16 @@
 {
     "githubPullRequests.ignoredPullRequestBranches": [
         "master"
-    ]
+    ],
+    "files.associations": {
+        "*.inc": "cpp",
+        "ranges": "cpp",
+        "array": "cpp",
+        "optional": "cpp",
+        "tuple": "cpp",
+        "variant": "cpp",
+        "type_traits": "cpp",
+        "iostream": "cpp",
+        "ostream": "cpp"
+    }
 }

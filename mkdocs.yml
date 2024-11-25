@@ -30,6 +30,7 @@ nav:
       - 往届资料收集: course/program/docs.md
       - 课件: course/program/ppt.md
       - 真题: course/program/problem.md
+      - 面向对象进阶: course/program/oop.md
     - 近代史纲要: 
       - 课程简介: course/history/index.md
       - 往届资料收集: course/history/docs.md
