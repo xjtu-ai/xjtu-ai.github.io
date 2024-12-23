@@ -14,6 +14,7 @@ nav:
     - 本地部署: compile.md
   - 课程: 
     - 简介: course/index.md
+    - 选修指南: course/guide.md
     - 高数上: 
       - 课程简介: course/math/index.md
       - 往届资料收集: course/math/docs.md
