@@ -1,5 +1,6 @@
 所谓“参考代码”，是课上提到并讲解了，但是难度较大或者用处较少的算法和数据结构的代码。
-### 哈夫曼树
+
+## 哈夫曼树
 
 ![](image/huffman.png)
 
@@ -42,7 +43,7 @@
     }
     ```
 
-### 二叉查找树
+## 二叉查找树
 
 ??? note "参考代码"
     ```cpp
@@ -135,7 +136,7 @@
     
     ```
 
-### 平衡树
+## 平衡树
 
 ??? note "参考代码"
     ```cpp
@@ -267,7 +268,7 @@
     };
     ```
 
-### Dijkstra
+## Dijkstra
 
 朴素实现：
 
@@ -333,7 +334,7 @@ void dijkstra(int n, int s) {
 }
 ```
 
-### Floyd
+## Floyd
 
 ```cpp
 for (k = 1; k <= n; k++) {
@@ -345,7 +346,7 @@ for (k = 1; k <= n; k++) {
 }
 ```
 
-### Bellman/SPFA
+## Bellman/SPFA
 
 Bellman：
 
@@ -419,7 +420,7 @@ bool spfa(int n, int s) {
 }
 ```
 
-### Prim
+## Prim
 
 ??? note "参考代码"
     ```cpp
@@ -483,7 +484,7 @@ bool spfa(int n, int s) {
     }
     ```
 
-### Kruskal
+## Kruskal
 
 ??? note "参考代码"
     ```cpp
@@ -554,7 +555,7 @@ bool spfa(int n, int s) {
     }
     ```
 
-### KMP
+## KMP
 
 [https://www.luogu.com.cn/problem/P3375](https://www.luogu.com.cn/problem/P3375)
 
@@ -592,7 +593,7 @@ int main() {
 }
 ```
 
-### 哈希表
+## 哈希表
 
 拉链法：
 
