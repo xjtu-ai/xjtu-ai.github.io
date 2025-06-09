@@ -1,16 +1,7 @@
 {
-    "githubPullRequests.ignoredPullRequestBranches": [
-        "master"
-    ],
+    "ros.distro": "humble",
     "files.associations": {
-        "*.inc": "cpp",
-        "ranges": "cpp",
-        "array": "cpp",
-        "optional": "cpp",
-        "tuple": "cpp",
-        "variant": "cpp",
-        "type_traits": "cpp",
-        "iostream": "cpp",
-        "ostream": "cpp"
+        "*.txt": "context",
+        "iostream": "cpp"
     }
 }

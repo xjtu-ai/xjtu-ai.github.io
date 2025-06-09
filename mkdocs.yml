@@ -43,6 +43,11 @@ nav:
       - 课程简介: course/lunli/index.md
       - 课件: course/lunli/ppt.md
       - 复习资料: course/lunli/docs.md
+    - 数据结构与算法:
+      - 数据结构模板: course/ds/template.md
+      - 算法模板: course/ds/algorithm.md
+      - 更多算法的参考代码: course/ds/code.md
+      - 理论知识: course/ds/theory.md
   - 竞赛:
     - 简介: competition/index.md
     - 数学建模: competition/math.md
@@ -65,7 +70,6 @@ theme:
     - content.action.edit
     - navigation.tabs
     - navigation.instant
-
   language: 'zh'
   palette:
     # Palette toggle for light mode
@@ -85,8 +89,10 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
-
+        
 markdown_extensions:
+  - toc:
+      toc_depth: 3
   - footnotes
   - admonition
   - pymdownx.details

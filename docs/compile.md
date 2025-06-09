@@ -10,7 +10,7 @@ cd xjtu-ai.github.io
 ## 安装依赖
 
 ```bash
-pip install mkdocs-material mkdocs-material-extensions mkdocs-material-pymdownx-extras
+pip install mkdocs-material mkdocs-material-extensions mkdocs_pymdownx_material_extras
 ```
 
 ## 本地预览
