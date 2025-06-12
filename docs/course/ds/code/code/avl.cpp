@@ -48,6 +48,8 @@ struct AVL_tree {
         p->ls = p->fa->rs;
         if (p->fa->rs != NULL) p->fa->rs->fa = p;
         p->fa->rs = p;
+        push_up(p);
+        push_up(p->fa);
     }
     void turn_left(point *p) {
         take_place(p->rs, p);
@@ -55,6 +57,8 @@ struct AVL_tree {
         p->rs = p->fa->ls;
         if (p->fa->ls != NULL) p->fa->ls->fa = p;
         p->fa->ls = p;
+        push_up(p);
+        push_up(p->fa);
     }
     void balance(point *p) {
         if (h(p->ls) - h(p->rs) == 2) {
