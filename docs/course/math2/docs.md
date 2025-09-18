@@ -3,20 +3,39 @@
 **《工科数学分析（二）》期中专题复习摘要**
 
 - **多元函数微分学**  
-  连续与可微判定、方向导数、泰勒展开  
-  $$f(x)=f(x_0)+\langle\nabla f(x_0),\Delta x\rangle+\tfrac12\Delta x^{\mathsf T}H_f(x_0+\theta\Delta x)\Delta x$$  
+  连续与可微判定、方向导数、泰勒展开
+
+$$
+f(x)=f(x_0)+\langle\nabla f(x_0),\Delta x\rangle+\tfrac12\Delta x^{\mathsf T}H_f(x_0+\theta\Delta x)\Delta x
+$$
+
   极值：无约束用 Hesse 矩阵正定/负定；有约束用 Lagrange 乘子  
-  $$\nabla f(x_0)=\lambda\nabla\varphi(x_0),\quad \varphi(x_0)=0$$
+  
+$$
+\nabla f(x_0)=\lambda\nabla\varphi(x_0),\quad \varphi(x_0)=0
+$$
+
 
 - **几何应用**  
   曲线切向量 $\dot r(t)$，曲面法向量 $r_u\times r_v$；弧长、曲率公式  
-  $$\kappa(t)=\dfrac{|\dot r\times\ddot r|}{|\dot r|^3}$$
+  
+$$
+\kappa(t)=\dfrac{|\dot r\times\ddot r|}{|\dot r|^3}
+$$
+
 
 - **重积分**  
   二重：X/Y 型、极坐标、对称奇偶、换序、变量替换  
-  $$\iint_D f(x,y)\,\mathrm d\sigma=\iint_{D'}f(x(u,v),y(u,v))|J|\,\mathrm du\mathrm dv$$  
+  
+$$
+\iint_D f(x,y)\,\mathrm d\sigma=\iint_{D'}f(x(u,v),y(u,v))|J|\,\mathrm du\mathrm dv
+$$
+
   三重：柱/球坐标、椭球变换、轮换对称  
-  $$\iiint_\Omega\mathrm dV=\int_0^{2\pi}\!\!\int_0^\pi\!\!\int_0^R \rho^2\sin\varphi\,\mathrm d\rho\mathrm d\varphi\mathrm d\theta$$
+  
+$$
+\iiint_\Omega\mathrm dV=\int_0^{2\pi}\!\!\int_0^\pi\!\!\int_0^R \rho^2\sin\varphi\,\mathrm d\rho\mathrm d\varphi\mathrm d\theta
+$$
 
 - **典型技巧**  
   极坐标求极限、Jacobi 链式法则、隐函数组求导、Lagrange 证不等式、对称性化简积分。
@@ -37,11 +56,14 @@
 2. **可微性**  
    - 全微分：$\Delta f=\nabla f\cdot\delta x+o(\|\delta x\|)$。  
    - 充分条件：偏导数连续；必要条件：函数连续、偏导存在。  
-   - 方向导数与梯度：$\partial_{\boldsymbol{e}}f=\nabla f\cdot\boldsymbol{e}$。
+   - 方向导数与梯度：$\partial_{\mathbf{e}}f=\nabla f\cdot\mathbf{e}$。
 
 3. **高阶导数与 Taylor 展开**  
    - Hessian 矩阵 $H_f$；二阶 Taylor：  
-     $$f(\boldsymbol{x})=f(0)+\nabla f(0)\cdot\boldsymbol{x}+\tfrac12\boldsymbol{x}^TH_f(0)\boldsymbol{x}+o(\|\boldsymbol{x}\|^2).$$
+     
+$$
+f(\mathbf{x})=f(0)+\nabla f(0)\cdot\mathbf{x}+\tfrac12\mathbf{x}^TH_f(0)\mathbf{x}+o(\|\mathbf{x}\|^2).
+$$
 
 4. **极值与 Lagrange 乘子**  
    - 必要条件：$\nabla f=0$；Hessian 正定⇒极小，负定⇒极大，不定⇒鞍点。  
@@ -56,8 +78,8 @@
    - 对称性：利用 $f(x,y)\pm f(\pm x,\pm y)=0$ 或轮换对称化简。
 
 7. **空间几何**  
-   - 曲线切向量 $\dot{\boldsymbol{r}}$，弧微分 $\mathrm{d}s=\|\dot{\boldsymbol{r}}\|\mathrm{d}t$。  
-   - 曲面法向量：$\boldsymbol{n}=\partial_u\boldsymbol{r}\times\partial_v\boldsymbol{r}$ 或 $\nabla F$；交线切向量 $\boldsymbol{t}=\boldsymbol{n}_1\times\boldsymbol{n}_2$。
+   - 曲线切向量 $\dot{\mathbf{r}}$，弧微分 $\mathrm{d}s=\|\dot{\mathbf{r}}\|\mathrm{d}t$。  
+   - 曲面法向量：$\mathbf{n}=\partial_u\mathbf{r}\times\partial_v\mathbf{r}$ 或 $\nabla F$；交线切向量 $\mathbf{t}=\mathbf{n}_1\times\mathbf{n}_2$。
 
 8. **技巧与例题**  
    - 构造一元函数 $\varphi(t)=f\bigl(A(1-t)+Bt\bigr)$ 证明 $|f(A)-f(B)|\le M|AB|$。  
@@ -86,10 +108,11 @@
   - 常数项级数审敛（比较、比值、根值、Leibniz）  
   - 幂级数：收敛半径 $R=\lim|\frac{a_n}{a_{n+1}}|$，和函数与展开  
   - Fourier 级数：系数  
-  $$
-  a_n=\frac1l\int_{-l}^{l}f(x)\cos\frac{n\pi x}{l}\,\mathrm{d}x,\quad
-  b_n=\frac1l\int_{-l}^{l}f(x)\sin\frac{n\pi x}{l}\,\mathrm{d}x
-  $$
+  
+$$
+a_n=\frac1l\int_{-l}^{l}f(x)\cos\frac{n\pi x}{l}\,\mathrm{d}x,\quad
+b_n=\frac1l\int_{-l}^{l}f(x)\sin\frac{n\pi x}{l}\,\mathrm{d}x
+$$
 
 - **习题精选**：  
   每章配典型题与完整解答，强化计算技巧与定理应用。
