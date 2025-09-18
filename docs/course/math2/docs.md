@@ -41,7 +41,7 @@ $$
   极坐标求极限、Jacobi 链式法则、隐函数组求导、Lagrange 证不等式、对称性化简积分。
 
 ??? note "【AI学组&钱学组】高数下期中专题复习"
-    <iframe loading="lazy" src="/static/course/math2/problem/【AI学组&钱学组】高数下期中专题复习.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/static/course/math2/docs/【AI学组&钱学组】高数下期中专题复习.pdf" type="application/pdf" width=100% height=1000px></iframe>
 
 ## 工科数学分析-期中
 
@@ -88,7 +88,7 @@ $$
 祝考试顺利。
 
 ??? note "工科数学分析-期中"
-    <iframe loading="lazy" src="/static/course/math2/problem/工科数学分析-期中.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/static/course/math2/docs/工科数学分析-期中.pdf" type="application/pdf" width=100% height=1000px></iframe>
 
 ## 高数下知识点&&习题归纳
 
@@ -118,5 +118,5 @@ $$
   每章配典型题与完整解答，强化计算技巧与定理应用。
 
 ??? note "高数下知识点&&习题归纳"
-    <iframe loading="lazy" src="/static/course/math2/problem/高数下知识点&&习题归纳.pdf" type="application/pdf" width=100% height=1000px></iframe>
+    <iframe loading="lazy" src="/static/course/math2/docs/高数下知识点&&习题归纳.pdf" type="application/pdf" width=100% height=1000px></iframe>
 
