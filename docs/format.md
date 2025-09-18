@@ -50,16 +50,17 @@ PDF 文档的摘要
     import sys
     import os
     
-    key = None # 或者填入 API key
-    outdir = # pdf 的绝对路径（不包含文件名），如'/static/course/math/docs'
-    if outdir == None :
+    key = os.getenv('MOONSHOT_AI_KEY') # 或者填入 API key
+    outdir = '/static/course/csai/'
+    if outdir == "" :
         outdir = '/'
     path = Path(sys.argv[1])
-    basename = path.name[:-4]
+    basename = path.stem
+    filename = path.name
     
     print("## %s\n" % basename)
     
-    if key != None:
+    if key:
         client = OpenAI(
             api_key = key,
             base_url = "https://api.moonshot.cn/v1",
@@ -76,25 +77,24 @@ PDF 文档的摘要
                 "role": "system",
                 "content": file_content,
             },
-            {"role": "user", "content": "请生成上传文件的摘要。字数不要超过 300 字。"},
+            {"role": "user", "content": "请生成上传文件的摘要。字数不要超过 300 字。使用 Markdown 语法标记输出。使用 Latex 语法输出数学公式"},
         ]
-    
+        
         try :
             completion = client.chat.completions.create(
-                model="moonshot-v1-auto",
+                model="kimi-k2-0905-preview",
                 messages=messages,
                 temperature=0.3,
             )
             print(completion.choices[0].message.content)
             print("")
-            
+        
         except :
             print("调用 API 失败")
-
+        
         client.files.delete(file_id=file_object.id)
     
-    print("??? note \"%s\"\n    <iframe loading="lazy" src=\"%s/%s.pdf\" type=\"application/pdf\" width=100%% height=1000px></iframe>\n" 
-        % (basename, outdir, basename))%
+    print("??? note \"%s\"\n    <iframe loading=\"lazy\" src=\"%s%s\" type=\"application/pdf\" width=100%% height=1000px></iframe>\n" % (basename, outdir, filename))
     ```
 
 在脚本中设定 `dir` 之后，运行 `python summary.py a.pdf` 就会生成 `a.pdf` 对应的 html 代码。如果 `key` 不是 `None`，而被指定为某个兼容 OpenAI api 的 api-key（脚本中是 Kimi），那么这个脚本还会自动用 AI 生成摘要。
