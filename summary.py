@@ -4,7 +4,7 @@ import sys
 import os
 
 key = os.getenv('MOONSHOT_AI_KEY') # 或者填入 API key
-outdir = '/static/course/prob/'
+outdir = '/static/course/math2/problem/'
 if outdir == "" :
     outdir = '/'
 path = Path(sys.argv[1])

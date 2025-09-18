@@ -21,11 +21,11 @@ nav:
       - 课件&讲座: course/math/ppt.md
       - 真题: course/math/problem.md
       - 电子书: course/math/ebook.md
-    # - 高数下: 
-      # - 往届资料收集: course/math2/docs.md
-      # - 课件&讲座: course/math2/ppt.md
-      # - 真题: course/math2/problem.md
-      # - 电子书: course/math2/ebook.md
+    - 高数下: 
+      - 课程简介: course/math2/index.md
+      - 往届资料收集: course/math2/docs.md
+      - 课件&讲座: course/math2/ppt.md
+      - 真题: course/math2/problem.md
     - 线性代数与解析几何: 
       - 课程简介: course/algebra/index.md
       - 往届资料收集: course/algebra/docs.md
