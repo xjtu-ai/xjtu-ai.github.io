@@ -1,0 +1,3758 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="人智学组资料收集网站">
+      
+      
+        <meta name="author" content="西安交通大学人工智能学组">
+      
+      
+        <link rel="canonical" href="http://xjtu-ai.github.io/course/math/docs/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../ppt/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>往届资料收集 - AI Wiki of XJTU</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="AI Wiki of XJTU" class="md-header__button md-logo" aria-label="AI Wiki of XJTU" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI Wiki of XJTU
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              往届资料收集
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/xjtu-ai/xjtu-ai.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    xjtu-ai/xjtu-ai.github.io
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  
+  AI Wiki of XJTU
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  
+  课程
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../competition/" class="md-tabs__link">
+          
+  
+  
+  竞赛
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="AI Wiki of XJTU" class="md-nav__button md-logo" aria-label="AI Wiki of XJTU" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI Wiki of XJTU
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/xjtu-ai/xjtu-ai.github.io" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    xjtu-ai/xjtu-ai.github.io
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AI Wiki of XJTU
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            AI Wiki of XJTU
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    简介
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contribute/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    参与贡献
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../format/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    格式规范
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../compile/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    本地部署
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    课程
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            课程
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    简介
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    选修指南
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    高数上
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            高数上
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    课程简介
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    往届资料收集
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    往届资料收集
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      工科数学分析基础（上）小助手
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      不定积分的代数解法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      常用积分表
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021" class="md-nav__link">
+    <span class="md-ellipsis">
+      高数期中小助手2021
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20211" class="md-nav__link">
+    <span class="md-ellipsis">
+      高数小助手2021(1)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lzx" class="md-nav__link">
+    <span class="md-ellipsis">
+      高树期末助攻讲座 LZX
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      各种中值定理习题
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      和差化积、积化和差、万能公式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      积分表积分公式推导
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2013215" class="md-nav__link">
+    <span class="md-ellipsis">
+      积分不等式（2013.2.15）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      积分不等式葵花宝典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      极限计算方法总结
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      罗尔、拉格朗日、柯西中值定理、洛必达法则与导数的应用
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      巧用换元积分法一题九解
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      求数列极限的十五种解法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      泰勒公式的应用及技巧
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      用等价无穷小代换求极限的两个误区
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      在不等式证明中的妙用泰勒公式1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#127" class="md-nav__link">
+    <span class="md-ellipsis">
+      积分表127个公式的推导
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ppt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    课件&讲座
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../problem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    真题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ebook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    电子书
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    高数下
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            高数下
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../math2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    课程简介
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../math2/docs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    往届资料收集
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../math2/problem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    真题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    线性代数与解析几何
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            线性代数与解析几何
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../algebra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    课程简介
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../algebra/docs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    往届资料收集
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../algebra/ppt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    课件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../algebra/problem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    真题&练习
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_6" id="__nav_2_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    计算机程序设计
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            计算机程序设计
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../program/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    课程简介
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../program/docs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    往届资料收集
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../program/ppt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    课件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../program/problem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    真题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../program/oop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    面向对象进阶
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    近代史纲要
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            近代史纲要
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    课程简介
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/docs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    往届资料收集
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../history/problem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    真题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    思修
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            思修
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sixiu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    课程简介
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sixiu/docs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    往届资料收集
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    工程伦理
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            工程伦理
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lunli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    课程简介
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lunli/ppt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    课件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lunli/docs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    复习资料
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_10" id="__nav_2_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    数据结构与算法
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            数据结构与算法
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ds/template/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    数据结构模板
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ds/algorithm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    算法模板
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ds/code/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    更多算法的参考代码
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ds/theory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    理论知识
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_11" id="__nav_2_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    人工智能的数学基础
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_11">
+            <span class="md-nav__icon md-icon"></span>
+            人工智能的数学基础
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    课程简介
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai/docs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    资料
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai/problem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    真题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_12" id="__nav_2_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    概率统计与随机过程
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_12">
+            <span class="md-nav__icon md-icon"></span>
+            概率统计与随机过程
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prob/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    课程简介
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prob/docs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    资料
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prob/ppt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    课件
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../prob/problem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    真题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_13" id="__nav_2_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    人工智能的数学基础（下）
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_13">
+            <span class="md-nav__icon md-icon"></span>
+            人工智能的数学基础（下）
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_13_1" id="__nav_2_13_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    24级复习资料
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_13_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_13_1">
+            <span class="md-nav__icon md-icon"></span>
+            24级复习资料
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_13_1_1" id="__nav_2_13_1_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    引论
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_13_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_13_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            引论
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/1/1_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    向量和矩阵范数
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/1/1_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    误差
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/1/1_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    数值计算原则
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/1/1_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    历年真题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13_1_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_13_1_2" id="__nav_2_13_1_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    非线性方程的求解
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_13_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_13_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            非线性方程的求解
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/2/2_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    必背公式和定理
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/2/2_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    迭代法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/2/2_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    历年真题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_13_1_3" id="__nav_2_13_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    线性方程组的求解
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_13_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_13_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            线性方程组的求解
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/3/3_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    高斯消元法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/3/3_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    矩阵分解法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/3/3_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    追赶法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/3/3_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    迭代法
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/3/3_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    误差分析
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/3/3_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    历年真题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_13_1_4" id="__nav_2_13_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    函数插值与逼近
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_13_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_13_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            函数插值与逼近
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/4/4_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    概念总览
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/4/4_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    拉格朗日插值
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/4/4_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    分段线性插值
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/4/4_4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    牛顿插值
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/4/4_5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    埃尔米特插值
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/4/4_6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    三次样条插值
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/4/4_7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    最佳一致逼近
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/4/4_8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    最佳平方逼近
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_13_1_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_13_1_5" id="__nav_2_13_1_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    凸函数与凸优化
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_13_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_13_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            凸函数与凸优化
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/5/5_1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    凸集和凸函数
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/5/5_2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    凸优化
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/5/5_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    历年真题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../csai2/problem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    真题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    竞赛
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            竞赛
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../competition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    简介
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../competition/math/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    数学建模
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../competition/lanqiao/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    蓝桥杯
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../competition/xcpc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CCPC/ICPC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../competition/physics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    物理学术竞赛
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../competition/xinchuang/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    教育信息技术应用创新大赛
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../competition/ict/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    华为 ICT 大赛
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../competition/3d/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3D 设计大赛
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../competition/dachuang/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    中国国际大学生创业创新大赛
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../competition/robot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    机器人竞赛
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../competition/tiaozhan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    挑战杯
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../competition/jieneng/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    全国大学生节能减排社会实践与科技竞赛
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../competition/cmc/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    全国大学生数学竞赛
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      工科数学分析基础（上）小助手
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      不定积分的代数解法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      常用积分表
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021" class="md-nav__link">
+    <span class="md-ellipsis">
+      高数期中小助手2021
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#20211" class="md-nav__link">
+    <span class="md-ellipsis">
+      高数小助手2021(1)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lzx" class="md-nav__link">
+    <span class="md-ellipsis">
+      高树期末助攻讲座 LZX
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      各种中值定理习题
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      和差化积、积化和差、万能公式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      积分表积分公式推导
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2013215" class="md-nav__link">
+    <span class="md-ellipsis">
+      积分不等式（2013.2.15）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      积分不等式葵花宝典
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      极限计算方法总结
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      罗尔、拉格朗日、柯西中值定理、洛必达法则与导数的应用
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      巧用换元积分法一题九解
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      求数列极限的十五种解法
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      泰勒公式的应用及技巧
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      用等价无穷小代换求极限的两个误区
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      在不等式证明中的妙用泰勒公式1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#127" class="md-nav__link">
+    <span class="md-ellipsis">
+      积分表127个公式的推导
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+    <a href="https://github.com/xjtu-ai/xjtu-ai.github.io/blob/master/docs/course/math/docs.md" title="编辑此页" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+  <h1>往届资料收集</h1>
+
+<p>此页面收集了往届高数学科的资料。每一份资料前有 AI 生成的摘要，请读者自行取用。</p>
+<h2 id="_1">工科数学分析基础（上）小助手</h2>
+<p>《工科数学分析基础（上）小助手》是一份由西安交通大学仲英学业辅导中心编写的学习资料，旨在帮助学生学习高等数学。本资料涵盖了函数、极限、连续性、一元函数微分学及其应用等重要主题，包括了各章节习题和答案详解。编写团队由自动化、电气、机械类等不同专业的学生组成，确保了内容的专业性和实用性。</p>
+<p>资料首先介绍了函数的基本性质，如单调性、奇偶性、有界性和周期性，并强调了奇偶性在积分运算中的应用。接着，详细讨论了数列极限的计算方法，包括ε-N定义、夹逼准则和单调有界原理等。在函数极限部分，介绍了函数极限的计算方法和典型例题，如利用洛必达法则、等价无穷小和泰勒展开式求极限。</p>
+<p>此外，资料还涉及了连续性、间断点类型、导数的概念、求导法则、微分、中值定理、洛必达法则和泰勒定理等微分学的核心内容。每个部分都配有典型例题和详细解答，帮助学生深入理解和掌握知识点。最后，资料提供了各章习题和答案，方便学生练习和复习。</p>
+<p>本资料适合工科学生作为高等数学学习的辅助材料，通过系统的知识点梳理和大量的例题练习，有助于提高学生的数学分析能力。</p>
+<details class="note">
+<summary>2019高数上期中小助手 (1)</summary>
+<p><iframe loading="lazy" src="/static/course/math/docs/2019高数上期中小助手 (1).pdf" type="application/pdf" width=100% height=1000px></iframe></p>
+</details>
+<h2 id="_2">不定积分的代数解法</h2>
+<p>本文提出了一种基于线性代数方法的不定积分求解新方法。文章首先介绍了积分与微分的逆运算关系，并利用线性空间与线性变换的概念，提出了一种计算不定积分的代数方法。通过构造线性空间V和选取一组线性无关的基函数，结合分块矩阵逆的性质，文章给出了求解不定积分的定理及其证明。该方法能够同时求解多个不定积分，并且对于高次多项式的情况，由于矩阵A的稀疏性，计算并不复杂。文章通过五个类型的不定积分实例验证了方法的有效性，展示了该方法在求解不定积分中的新颖性、直接性和实用性。该方法有助于激发学生将代数方法应用于高等数学问题解决中，拓展解题思维。</p>
+<details class="note">
+<summary>不定积分的代数解法</summary>
+<p><iframe loading="lazy" src="/static/course/math/docs/不定积分的代数解法.pdf" type="application/pdf" width=100% height=1000px></iframe></p>
+</details>
+<h2 id="_3">常用积分表</h2>
+<p>这份文件是一份详尽的常用积分公式表，包含了多种类型的积分公式，如线性函数、二次函数、三角函数、反三角函数、指数函数、对数函数和双曲函数的积分。它为解决各种积分问题提供了直接的公式参考，适合数学、物理和工程等领域的学生和专业人士使用。文件中列出了积分公式的一般形式和特定情况下的变体，例如含有 <span class="arithmatex">\( ax + b \)</span>、<span class="arithmatex">\( ax^2 + bx + c \)</span>、<span class="arithmatex">\( \sqrt{x^2 \pm a} \)</span> 等表达式的积分。此外，还包括了定积分的计算方法，特别是周期函数在一个周期内的积分。这些公式有助于快速找到复杂积分问题的解，是学习和工作中的宝贵资源。</p>
+<details class="note">
+<summary>常用积分表</summary>
+<p><iframe loading="lazy" src="/static/course/math/docs/常用积分表.pdf" type="application/pdf" width=100% height=1000px></iframe></p>
+</details>
+<h2 id="2021">高数期中小助手2021</h2>
+<p>本文档是仲英书院学业辅导中心编写的高数学习辅导资料，旨在帮助学生全面理解和掌握高数知识点。内容包括函数、极限、连续性、一元函数微分学及其应用等重要概念和典型例题。文档详细介绍了函数的基本性质、极限的求解方法、连续性概念以及导数的计算和应用。同时，还涉及了微分中值定理、洛必达法则和泰勒公式等重要定理的应用。文档强调了导数与连续性的关系，以及如何通过导数研究函数的性态，如单调性、极值和拐点。此外，还提供了一些证明题，以加深对高数概念的理解和应用能力。文档最后鼓励学生在学习过程中发现错误并提供反馈，以便不断改进和更新资料内容。</p>
+<details class="note">
+<summary>高数期中小助手2021</summary>
+<p><iframe loading="lazy" src="/static/course/math/docs/高数期中小助手2021.pdf" type="application/pdf" width=100% height=1000px></iframe></p>
+</details>
+<h2 id="20211">高数小助手2021(1)</h2>
+<p>本文档是一份由仲英书院学业辅导中心编写的高数学习辅导资料，内容全面且详细，旨在帮助学生巩固和提高高数知识。资料涵盖了函数、极限、连续性、一元函数微分学及其应用、一元函数积分学及其应用、常微分方程等多个高数核心主题。每个主题下都细分为多个小节，提供了概念解释、性质总结、典型例题和解题方法。文档还包含了导数、积分、微分方程等重要概念的深入讨论和应用，如链式求导法则、积分中值定理、拉格朗日定理、洛必达法则等。此外，还提供了不定积分、定积分、反常积分的计算方法和应用实例，以及线性微分方程组的解法。文档最后附有各章习题举例，供学生练习。整体而言，这份资料是一份实用的高数学习指南，适合大学生和需要复习高数知识的人群使用。</p>
+<details class="note">
+<summary>高数小助手2021(1)</summary>
+<p><iframe loading="lazy" src="/static/course/math/docs/高数小助手2021(1).pdf" type="application/pdf" width=100% height=1000px></iframe></p>
+</details>
+<h2 id="lzx">高树期末助攻讲座 LZX</h2>
+<p>这份文件是一份关于高等数学期末复习的讲座资料，内容涵盖了函数、极限、连续性、微分学及其应用、积分学及其应用、无穷级数和Fourier级数等多个高等数学的核心主题。文档详细介绍了数列极限、函数极限、无穷小量、连续函数的性质，以及导数、微分、微分中值定理、泰勒定理和函数性态等微分学内容。积分学部分包括定积分、微积分基本公式、换元积分法、分部积分法以及定积分的应用。无穷级数方面，讲解了常数项级数、函数项级数、幂级数和Fourier级数。文档还提供了重点题型和解题方法，例如判断数列收敛性、求极限、微分方程求解等。此外，还包含了一些常见的无穷小等价代换和导数公式，以及如何使用这些方法来解决具体的数学问题。最后，文档提供了获取PPT和往年试题的方式，供学生进一步学习和复习。</p>
+<details class="note">
+<summary>高树期末助攻讲座 LZX</summary>
+<p><iframe loading="lazy" src="/static/course/math/docs/高树期末助攻讲座 LZX.pdf" type="application/pdf" width=100% height=1000px></iframe></p>
+</details>
+<h2 id="_4">各种中值定理习题</h2>
+<p>上传的文件是一份关于微积分中值定理及其在积分不等式证明中应用的习题资料。文档首先介绍了微分中值定理、泰勒公式、函数的单调性和凹凸性等概念，并展示了如何利用这些工具来证明积分不等式。接着，文档通过一系列的例子详细阐述了如何应用这些定理来解决具体的积分问题。此外，还探讨了定积分的性质、牛顿-莱布尼茨公式、广义积分以及定积分的计算方法。最后，文档提供了一系列的练习题，包括选择题、证明题和求导数、定积分的题目，并附有详细的解答。这份资料适合作为数学分析或微积分课程的教学辅助材料，旨在帮助学生深入理解和掌握中值定理及其在积分计算中的应用。</p>
+<details class="note">
+<summary>各种中值定理习题</summary>
+<p><iframe loading="lazy" src="/static/course/math/docs/各种中值定理习题.pdf" type="application/pdf" width=100% height=1000px></iframe></p>
+</details>
+<h2 id="_5">和差化积、积化和差、万能公式</h2>
+<p>上传的文件是关于三角函数的和差化积、积化和差以及万能公式的详细解释和记忆方法。文档首先介绍了正弦、余弦的和差化积公式，并通过证明过程展示了如何从两角和差公式推导出来。接着，文档解释了正切和余切的和差化积公式，并提供了证明。文档还强调了在使用这些公式时的注意事项，比如必须是同名三角函数才能进行和差化积，以及如何通过口诀和记忆方法来帮助理解和记忆这些复杂的公式。此外，文档还讨论了积化和差公式，说明了它们可以将三角函数的乘积转换为和或差的形式，以及在历史上这些公式如何用于简化复杂的三角函数运算。最后，文档介绍了万能公式，这是一种将正弦、余弦和正切函数用半角的正切来表示的方法。整体而言，这份文档是一个关于三角函数恒等变换的全面指南，旨在帮助理解和应用这些重要的数学工具。</p>
+<details class="note">
+<summary>和差化积、积化和差、万能公式</summary>
+<p><iframe loading="lazy" src="/static/course/math/docs/和差化积、积化和差、万能公式.pdf" type="application/pdf" width=100% height=1000px></iframe></p>
+</details>
+<h2 id="_6">积分表积分公式推导</h2>
+<p>上传的文件是一份高等数学积分公式的推导资料，包含了从基础的一次函数积分到复杂的含有三角函数、指数函数、对数函数和双曲函数的积分。文档首先列出了积分公式的目录，然后详细推导了各种类型的积分公式，如含有 <span class="arithmatex">\( ax + b \)</span> 的积分、含有 <span class="arithmatex">\( \sqrt{x^2 \pm a^2} \)</span> 的积分、含有 <span class="arithmatex">\( \sqrt{a^2 \pm x^2} \)</span> 的积分等。每个积分公式都有详细的推导步骤和证明过程。此外，还包括了定积分的相关内容和一些基本初等函数的导数公式。文档最后提供了编辑团队的信息和一些说明，如感谢团队成员和高数老师的合作，以及讲义编辑的匆忙可能导致的错误。整体而言，这份资料是对高等数学中积分部分的一个全面总结和深入探讨，适合需要复习和深化理解积分技巧的学生和教师使用。</p>
+<details class="note">
+<summary>积分表积分公式推导</summary>
+<p><iframe loading="lazy" src="/static/course/math/docs/积分表积分公式推导.pdf" type="application/pdf" width=100% height=1000px></iframe></p>
+</details>
+<h2 id="2013215">积分不等式（2013.2.15）</h2>
+<p>这份文件包含了一系列的积分不等式问题，主要涉及证明不同函数在给定区间上的积分满足特定的不等式关系。问题覆盖了正弦、余弦、指数函数以及它们的组合，还有多项式函数和一些特定形式的函数。这些不等式问题要求使用积分技巧、函数性质和不等式理论来证明。例如，证明正弦函数的平方在某个区间上的积分有界，或者证明某个特定函数的积分小于等于一个常数。这些问题适合数学专业的学生或研究者，作为练习或研究积分不等式的工具。</p>
+<details class="note">
+<summary>积分不等式（2013.2.15）</summary>
+<p><iframe loading="lazy" src="/static/course/math/docs/积分不等式（2013.2.15）.pdf" type="application/pdf" width=100% height=1000px></iframe></p>
+</details>
+<h2 id="_7">积分不等式葵花宝典</h2>
+<p>《积分不等式葵花宝典》是一本由Hoganbin编写，专注于考研数学竞赛中的积分不等式问题的书籍。书中详细介绍了柯西—施瓦茨不等式及其在积分中的应用，并提供了多种证明方法和相关推论。作者通过一系列例子展示了如何运用这些不等式解决数学问题，如证明不等式、求解三角形和计算最值等。书中还探讨了多元函数的柯西-施瓦茨不等式，并提供了琴声不等式、斯蒂文森不等式等其他重要的积分不等式及其应用。此外，书中还包含了积分中值定理、微分中值定理和Favard不等式等多种方法，旨在帮助读者深入理解和掌握积分不等式在考研数学中的应用。书籍内容适合准备考研数学竞赛的学生和数学爱好者阅读参考。</p>
+<details class="note">
+<summary>积分不等式葵花宝典</summary>
+<p><iframe loading="lazy" src="/static/course/math/docs/积分不等式葵花宝典.pdf" type="application/pdf" width=100% height=1000px></iframe></p>
+</details>
+<h2 id="_8">极限计算方法总结</h2>
+<p>本文总结了《高等数学》中极限的概念、运算法则和求解方法。首先介绍了极限的定义和一些基本结果，如数列和函数的极限，以及极限的运算法则。文中强调了两个重要的极限和等价无穷小的概念，并介绍了洛必达法则。此外，还讨论了函数的连续性以及极限存在准则。文章通过多个例题详细展示了如何使用初等方法、函数连续性、重要极限、等价无穷小代换、洛必达法则和极限存在准则来求解极限。最后，提供了62个极限计算的典型习题，包括使用变量替换法、等价无穷小替换法和连续性法来求解极限问题。这些内容对于理解和掌握极限的计算方法非常有帮助。</p>
+<details class="note">
+<summary>极限计算方法总结</summary>
+<p><iframe loading="lazy" src="/static/course/math/docs/极限计算方法总结.pdf" type="application/pdf" width=100% height=1000px></iframe></p>
+</details>
+<h2 id="_9">罗尔、拉格朗日、柯西中值定理、洛必达法则与导数的应用</h2>
+<p>本文档是关于中值定理与导数应用的数学教材，涵盖了罗尔定理、拉格朗日中值定理、柯西中值定理和洛必达法则等重要概念，并提供了这些定理的名称、条件和结论。文档还包含了泰勒公式的介绍，包括泰勒中值定理、麦克劳林公式以及初等函数的麦克劳林公式。此外，还探讨了函数的单调性与曲线的凹凸性，提供了判断函数单调性和凹凸性的方法。文档最后包含了多个与中值定理和导数应用相关的习题及其解答，这些习题涉及了如何应用这些定理来解决问题，例如求函数的极值、证明不等式、判断函数的单调性和凹凸性等。通过这些习题，读者可以加深对中值定理和导数应用的理解。</p>
+<details class="note">
+<summary>罗尔、拉格朗日、柯西中值定理、洛必达法则与导数的应用</summary>
+<p><iframe loading="lazy" src="/static/course/math/docs/罗尔、拉格朗日、柯西中值定理、洛必达法则与导数的应用.pdf" type="application/pdf" width=100% height=1000px></iframe></p>
+</details>
+<h2 id="_10">巧用换元积分法一题九解</h2>
+<p>本文探讨了换元积分法在解决不定积分问题中的应用和技巧。作者通过一道具体的积分习题，展示了九种不同的换元积分解法，包括三角代换、双曲代换、倒代换等常用技巧。这些方法涉及将被积函数变形以适应基本积分公式，以及通过分解被积函数并逐步凑微元变形来解决积分问题。文章强调，不定积分的结果是一个原函数的集合，通常表示为一个原函数加上任意常数。重要的是，只要积分结果的导数等于被积函数，该结果就是正确的，即使形式上可能与参考答案不同。通过这些解法，作者旨在提高学生在积分方面的水平，鼓励他们在实践中探索和总结换元积分的技巧。</p>
+<details class="note">
+<summary>巧用换元积分法一题九解</summary>
+<p><iframe loading="lazy" src="/static/course/math/docs/巧用换元积分法一题九解.pdf" type="application/pdf" width=100% height=1000px></iframe></p>
+</details>
+<h2 id="_11">求数列极限的十五种解法</h2>
+<p>本文详细介绍了求数列极限的十五种方法，包括定义法、利用柯西收敛准则、单调有界定理、迫敛性准则、定积分定义、归结原则、施托尔茨定理、级数求和、级数收敛性判断、幂级数、微分中值定理、无穷小数列、无穷小的等价代换、压缩映射原理和矩阵求解等。每种方法都配有详细解释和相应的例子，以便读者理解和应用。这些方法覆盖了数列极限问题的多种情况，从基础的定义法到高级的矩阵方法，为解决复杂的数列极限问题提供了丰富的工具。通过这些方法，可以更有效地分析和计算数列的极限，是数学分析中的重要技巧。</p>
+<details class="note">
+<summary>求数列极限的十五种解法</summary>
+<p><iframe loading="lazy" src="/static/course/math/docs/求数列极限的十五种解法.pdf" type="application/pdf" width=100% height=1000px></iframe></p>
+</details>
+<h2 id="_12">泰勒公式的应用及技巧</h2>
+<p>泰勒公式在数学分析中具有重要应用，本文探讨了其在方程根的唯一存在性、级数敛散性以及定积分不等式或等式的证明中的运用。首先，通过泰勒公式和介值定理证明了在特定条件下方程根的唯一性。其次，利用泰勒公式简化级数通项，便于应用判敛准则，例如通过泰勒展开简化了级数的通项，从而判断其收敛性。此外，泰勒公式也被用于证明定积分的不等式或等式，关键在于选择合适的函数和展开点。文中通过具体例子展示了泰勒公式的应用技巧，强调了在解题时分析题设条件和恰当选择展开点的重要性。</p>
+<details class="note">
+<summary>泰勒公式的应用及技巧</summary>
+<p><iframe loading="lazy" src="/static/course/math/docs/泰勒公式的应用及技巧.pdf" type="application/pdf" width=100% height=1000px></iframe></p>
+</details>
+<h2 id="_13">用等价无穷小代换求极限的两个误区</h2>
+<p>本文探讨了使用等价无穷小代换求极限时的两个常见误区。首先，指出了代数和或差中各部分无穷小不能直接代换，因为代换的适用性取决于极限的存在性和无穷小量的等价关系。其次，讨论了复合函数的中间变量在某些条件下可以进行等价无穷小代换，但需要注意函数的连续性。文章通过具体实例和定理分析，提供了正确使用等价无穷小代换的方法，并强调了在应用过程中需要满足的条件，以避免计算错误。最后，文章还讨论了分段函数在分段点处的导数问题，指出连续性是可导性的必要条件，并提供了求解分段点导数的新思路。</p>
+<details class="note">
+<summary>用等价无穷小代换求极限的两个误区</summary>
+<p><iframe loading="lazy" src="/static/course/math/docs/用等价无穷小代换求极限的两个误区.pdf" type="application/pdf" width=100% height=1000px></iframe></p>
+</details>
+<h2 id="1">在不等式证明中的妙用泰勒公式1</h2>
+<p>本文探讨了泰勒公式在不等式证明中的应用，强调了泰勒公式在近似计算、求极限和判断级数敛散性方面的优势。文章指出，泰勒公式在定积分不等式证明中的关键在于选择合适的展开点和展开项数。通过三个例子，展示了泰勒公式在证明含定积分、导函数和代数不等式中的应用。此外，文章还讨论了在高职数学教学中引入数学实验的重要性，强调了通过数学软件进行数值计算和图形描绘，培养学生数学建模和数据处理能力的必要性。作者认为，这种教学模式有助于提高学生学习数学的积极性，并适应高职教育的快速发展。</p>
+<details class="note">
+<summary>在不等式证明中的妙用泰勒公式1</summary>
+<p><iframe loading="lazy" src="/static/course/math/docs/在不等式证明中的妙用泰勒公式1.pdf" type="application/pdf" width=100% height=1000px></iframe></p>
+</details>
+<h2 id="127">积分表127个公式的推导</h2>
+<p>上传的文件是一份关于高等数学积分表的详细推导，包含了从含有 <span class="arithmatex">\(ax + b\)</span> 的积分到定积分等多种类型的积分公式及其证明。文件中列出了127个积分公式，每个公式都配有详细的推导过程，包括代入、变形、整理等步骤。这些公式涵盖了基本初等函数、三角函数、反三角函数、指数函数、对数函数和双曲函数等。此外，还包括了一些定积分的计算方法。这份文件可以作为高等数学中积分部分的学习和参考资料，适合大学生、教师和数学爱好者使用。</p>
+<details class="note">
+<summary>积分表127个公式的推导</summary>
+<p><iframe loading="lazy" src="/static/course/math/docs/积分表127个公式的推导.pdf" type="application/pdf" width=100% height=1000px></iframe></p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "content.action.edit", "navigation.tabs", "navigation.instant"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
+      
+    
+  </body>
+</html>
