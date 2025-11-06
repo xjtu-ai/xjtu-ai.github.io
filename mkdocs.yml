@@ -61,6 +61,38 @@ nav:
       - 资料: course/prob/docs.md
       - 课件: course/prob/ppt.md
       - 真题: course/prob/problem.md
+    - 人工智能的数学基础（下）:
+      - 24级复习资料: 
+        - 引论: 
+          - 向量和矩阵范数: course/csai2/1/1_1.md
+          - 误差: course/csai2/1/1_2.md
+          - 数值计算原则: course/csai2/1/1_3.md
+          - 历年真题: course/csai2/1/1_4.md
+        - 非线性方程的求解: 
+          - 必背公式和定理: course/csai2/2/2_1.md
+          - 迭代法: course/csai2/2/2_2.md
+          - 历年真题: course/csai2/2/2_3.md
+        - 线性方程组的求解: 
+          - 高斯消元法: course/csai2/3/3_1.md
+          - 矩阵分解法: course/csai2/3/3_2.md
+          - 追赶法: course/csai2/3/3_3.md
+          - 迭代法: course/csai2/3/3_4.md
+          - 误差分析: course/csai2/3/3_5.md
+          - 历年真题: course/csai2/3/3_6.md
+        - 函数插值与逼近: 
+          - 概念总览: course/csai2/4/4_1.md
+          - 拉格朗日插值: course/csai2/4/4_2.md
+          - 分段线性插值: course/csai2/4/4_3.md
+          - 牛顿插值: course/csai2/4/4_4.md
+          - 埃尔米特插值: course/csai2/4/4_5.md
+          - 三次样条插值: course/csai2/4/4_6.md
+          - 最佳一致逼近: course/csai2/4/4_7.md
+          - 最佳平方逼近: course/csai2/4/4_8.md
+        - 凸函数与凸优化:
+          - 凸集和凸函数: course/csai2/5/5_1.md
+          - 凸优化: course/csai2/5/5_2.md
+          - 历年真题: course/csai2/5/5_3.md
+      - 真题: course/csai2/problem.md
 
   - 竞赛:
     - 简介: competition/index.md

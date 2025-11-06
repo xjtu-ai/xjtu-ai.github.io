@@ -22,7 +22,7 @@
 PDF 文档的摘要
 
 ??? note "PDF 文档的标题"
-    <iframe loading="lazy" src="PDF 文档的绝对路径（从网站根目录开始，如/static/course/math/docs/巧用换元积分法一题九解.pdf）"></iframe>
+    <iframe loading="lazy" src="PDF 文档的绝对路径（从网站根目录开始，如/static/course/math/docs/巧用换元积分法一题九解.pdf） type="application/pdf" width=100% height=1000px"></iframe>
 ```
 
 这使用一个默认不展开的 note 包裹 pdf 文件。`??? note` 是 mkdocs 支持的语法，可以查看 [MkDocs Material 文档](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)。
