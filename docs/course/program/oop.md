@@ -28,7 +28,44 @@
 
 ??? note "构造函数实例"
     ```cpp
-    --8<-- "docs/course/program/code/oop/example_constructor_1.cpp"
+    #include <iostream>
+    using namespace std;
+    
+    class MyClass {
+    private:
+        int a, b, c;
+    public:
+        MyClass() {
+            a = b = c = 0;
+        }
+        
+        MyClass(int a) { // 重名
+            this -> a = a;
+            b = c = 0;
+        }
+    
+        MyClass(int a, int b, int c = 0) : a(a), b(b), c(c) {} // 默认值 & 语法糖
+    
+        void print() {
+            cout << "a is " << a << ", b is " << b << ", c is " << c << endl;
+        }
+    };
+    
+    int main() {
+        MyClass a;
+        a.print(); // 0, 0, 0
+    
+        MyClass b(1);
+        b.print(); // 1, 0, 0
+    
+        MyClass c(1, 2);
+        c.print(); // 1, 2, 0
+    
+        MyClass d = MyClass(1, 2, 3);
+        d.print(); // 1, 2, 3
+    
+        return 0;
+    }
     ```
 
 ### 析构函数
@@ -43,7 +80,56 @@
 
 ??? note "构造函数与析构函数"
     ```cpp
-    --8<-- "docs/course/program/code/oop/example_constructor_2.cpp"
+    #include <iostream>
+    #include <string>
+    using namespace std;
+    
+    class MyClass {
+    private:
+        string name;
+    public:
+        MyClass(string name) : name(name) {
+            cout << name << " has been constructed." << endl;
+        }
+    
+        ~MyClass() {
+            cout << name << " has been deconstructed." << endl;
+        }
+    };
+    
+    void foo() {
+        MyClass c("c");
+    }
+    
+    int main() {
+        MyClass a("a");
+    
+        cout << "Code block begins." << endl;
+        {
+            MyClass b("b");
+        }
+        cout << "Code block ended." << endl << endl;
+    
+        cout << "Function foo begins." << endl;
+        foo();
+        cout << "Function foo ended." << endl << endl;
+        return 0;
+    }
+    
+    /*
+    a has been constructed.
+    Code block begins.
+    b has been constructed.
+    b has been deconstructed.
+    Code block ended.
+    
+    Function foo begins.
+    c has been constructed.
+    c has been deconstructed.
+    Function foo ended.
+    
+    a has been deconstructed.
+    */
     ```
 
 ### 复制对象
@@ -58,7 +144,55 @@
 
 ??? note "复制对象"
     ```cpp
-    --8<-- "docs/course/program/code/oop/example_constructor_3.cpp"
+    #include <iostream>
+    #include <string>
+    using namespace std;
+    
+    class MyClass {
+    private:
+        string name;
+    public:
+        MyClass(string name) : name(name) {
+            cout << name << " has been constructed." << endl;
+        }
+    
+        ~MyClass() {
+            cout << name << " has been deconstructed." << endl;
+        }
+    };
+    
+    void foo(MyClass c) {
+        // do some thing
+        return;
+    }
+    
+    MyClass goo() {
+        MyClass d("d");
+        return d;
+    }
+    
+    int main() {
+        cout << "Function goo begins." << endl;
+        MyClass a = goo();
+        cout << "Function goo ended." << endl << endl;
+    
+        cout << "Function foo begins." << endl;
+        foo(a);
+        cout << "Function foo ended." << endl << endl;
+        return 0;
+    }
+    
+    /*
+    Function goo begins.
+    d has been constructed.
+    Function goo ended.
+    
+    Function foo begins.
+    d has been deconstructed.
+    Function foo ended.
+    
+    d has been deconstructed.
+    */
     ```
 
 运行结果似乎不太对？为什么 `d` 被销毁了两次？
@@ -67,7 +201,67 @@
 
 ??? note "复制构造函数"
     ```cpp
-    --8<-- "docs/course/program/code/oop/example_constructor_4.cpp"
+    #include <iostream>
+    #include <string>
+    using namespace std;
+    
+    class MyClass {
+    private:
+        string name;
+    public:
+        MyClass(string name) : name(name) {
+            cout << name << " has been constructed." << endl;
+        }
+    
+        MyClass(const MyClass &x) {
+            name = "copy of " + x.name;
+            cout << name << " has been constructed." << endl;
+        }
+    
+        ~MyClass() {
+            cout << name << " has been deconstructed." << endl;
+        }
+    };
+    
+    void foo(MyClass c) {
+        // do some thing
+        return;
+    }
+    
+    MyClass goo() {
+        MyClass d("d"), e("e");
+        return d;
+    }
+    
+    int main() {
+        cout << "Function goo begins." << endl;
+        MyClass a = goo();
+        cout << "Function goo ended." << endl << endl;
+    
+        cout << "Function foo begins." << endl;
+        foo(a);
+        cout << "Function foo ended." << endl << endl;
+    
+        MyClass b = a;
+        return 0;
+    }
+    
+    /*
+    Function goo begins.
+    d has been constructed.
+    e has been constructed.
+    e has been deconstructed.
+    Function goo ended.
+    
+    Function foo begins.
+    copy of d has been constructed.
+    copy of d has been deconstructed.
+    Function foo ended.
+    
+    copy of d has been constructed.
+    copy of d has been deconstructed.
+    d has been deconstructed.
+    */
     ```
 
 观察运行结果。
@@ -97,7 +291,96 @@
 
 ??? note "错误示范"
     ```cpp
-    --8<-- "docs/course/program/code/oop/problem_matrix_RE.cpp"
+    #include <bits/stdc++.h>
+    using namespace std;
+    
+    class Matrix {
+    private:
+        int row;
+        int column;
+        int **mat;
+    public:
+        Matrix(int r, int c) {
+            row = r;
+            column = c;
+            mat = new int *[r];
+            for (int i = 0; i < r; i++) {
+                mat[i] = new int[c];
+            }
+        }
+        void set(int i, int j, int v) {
+            mat[i][j] = v;
+        }
+        ~Matrix() {
+            for (int i = 0; i < row; i++) {
+                delete mat[i];
+            }
+            delete mat;
+        }
+        void display() {
+            for (int i = 0; i < row; i++) {
+                for (int j = 0; j < column; j++) {
+                    cout<<setw(10)<<mat[i][j];
+                }
+                cout << endl;
+            }
+        }
+        friend Matrix operator*(const Matrix &a, const Matrix &b);
+    };
+    
+    Matrix operator*(const Matrix &a, const Matrix &b) {
+        if (a.column == 1 && a.row == 1) {
+            Matrix res(b.row, b.column);
+            for (int i = 0; i < res.row; i++) {
+                for (int j = 0; j < res.column; j++) {
+                    res.mat[i][j] = b.mat[i][j] * a.mat[0][0];
+                } 
+            }
+            return res;
+        }
+        if (b.column == 1 && b.row == 1) {
+            Matrix res(a.row, a.column);
+            for (int i = 0; i < res.row; i++) {
+                for (int j = 0; j < res.column; j++) {
+                    res.mat[i][j] = a.mat[i][j] * b.mat[0][0];
+                } 
+            }
+            return res;
+        }
+        Matrix res(a.row, b.column);
+        for (int i = 0; i < res.row; i++) {
+            for (int j = 0; j < res.column; j++) {
+                res.mat[i][j] = 0;
+                for (int k = 0; k < a.column; k++) {
+                    res.mat[i][j] += a.mat[i][k] * b.mat[k][j];
+                }
+            }
+        }
+        return res;
+    }
+    
+    int main() {
+        int r1, c1, r2, c2;
+        cin >> r1 >> c1; Matrix m1(r1, c1);
+        for (int i = 0; i < r1; i++) {
+            for (int j = 0; j < c1; j++) {
+                int x; cin >> x;
+                m1.set(i, j, x);
+            }
+        }
+        cin >> r2 >> c2; Matrix m2(r2, c2);
+        for (int i = 0; i < r2; i++) {
+            for (int j = 0; j < c2; j++) {
+                int x; cin >> x;
+                m2.set(i, j, x);
+            }
+        }
+        if (c1 == r2 || (c1 == 1 && r1 == 1)) {
+            Matrix m3 = m1 * m2;
+            m3.display();
+        } else cout << "Invalid Matrix multiplication!" << endl;
+        return 0;
+    }
     ```
 
 代码的思路是，构造函数传入矩阵的大小，随后动态开辟空间。既然是 `matrix` 类自己开的空间，自然需要在析构函数里释放空间。
@@ -203,7 +486,157 @@ Matrix operator*(const Matrix &a, const Matrix &b) {
 
 ??? note "无符号高精度加法"
     ```cpp
-    --8<-- "docs/course/program/code/oop/example_bigint.cpp"
+    #include <bits/stdc++.h>
+    using namespace std;
+    
+    class BigInt {
+    private:
+        static const int BASE;
+        vector<int> val;
+        void maintain();
+    public:
+        BigInt();
+        BigInt(int v);
+        BigInt(const BigInt &x);
+    
+        friend BigInt operator+ (const BigInt &x, const BigInt &y);
+        
+        friend BigInt operator+ (const BigInt &x);
+    
+        friend BigInt& operator++ (BigInt &x); // ++x
+        friend BigInt operator++ (BigInt &x, int); // x++
+    
+        friend bool operator< (const BigInt &x, const BigInt &y);
+    
+        friend BigInt& operator+= (BigInt &x, const BigInt &y);
+    
+        friend istream& operator>> (istream &is, BigInt &x);
+        friend ostream& operator<< (ostream &os, const BigInt &x);
+    };
+    
+    const int BigInt::BASE = 10;
+    
+    void BigInt::maintain() {
+        int c = 0;
+        for (int &x : val) {
+            x += c;
+            c = x / BASE;
+            x %= BASE;
+        }
+        if (c) val.push_back(c);
+        while (val.size() > 1 && val.back() == 0) val.pop_back();
+    }
+    
+    BigInt::BigInt() {
+        val.push_back(0);
+    }
+    
+    BigInt::BigInt(int x) {
+        val.push_back(x);
+        maintain();
+    }
+    
+    BigInt::BigInt(const BigInt &x) {
+        val = x.val;
+    }
+    
+    BigInt operator+(const BigInt &x, const BigInt &y) {
+        BigInt res = x;
+        for (int i = 0; i < y.val.size(); i++) {
+            if (i == res.val.size()) res.val.push_back(y.val[i]);
+            else res.val[i] += y.val[i];
+        }
+        res.maintain();
+        return res;
+    }
+    
+    BigInt operator+(const BigInt &x) {
+        return x;
+    }
+    
+    // ++x 单目运算符
+    BigInt& operator++(BigInt &x) { 
+        x.val[0]++;
+        x.maintain();
+        return x;
+    }
+    
+    // x++ 通过后面加上一个无用的隐藏的 int 实现，实际是告诉编译器这是一个后缀++
+    BigInt operator++(BigInt &x, int) {
+        BigInt res = x;
+        x.val[0]++;
+        x.maintain();
+        return res;
+    }
+    
+    bool operator<(const BigInt &x, const BigInt &y) {
+        if (x.val.size() != y.val.size()) {
+            return x.val.size() < y.val.size();
+        }
+        for (int i = x.val.size() - 1; i >= 0; i--) {
+            if (x.val[i] != y.val[i]) {
+                return x.val[i] < y.val[i];
+            }
+        }
+        return false;
+    }
+    
+    BigInt& operator+=(BigInt &x, const BigInt &y) {
+        for (int i = 0; i < y.val.size(); i++) {
+            if (i == x.val.size()) x.val.push_back(y.val[i]);
+            else x.val[i] += y.val[i];
+        }
+        x.maintain();
+        return x;
+    }
+    
+    /*
+    cin cout 的原理：
+    
+    cin 是 istream 类的对象。istream 类重载了与许多常见类型的 >> 运算符。
+    比如重载了 istream::operator>>(istream, int&) 就可以用 cin >> (一个 int 变量)  来输入一个 int
+    
+    cin 的巧思在于，将 >> 运算符的返回值设为 cin 本身实现连续输入
+    比如 cin >> a >> b
+    
+    先执行 cin >> a，输入 a 之后返回 cin 自己，这个 cin 返回值再 >> b，完成对 b 的输入
+    
+    cout 同理
+    */
+    
+    istream& operator>>(istream &is, BigInt &x) { 
+        x.val.clear();
+        int ch = is.get();
+        while (ch < '0' || ch > '9') ch = is.get();
+        while (ch >= '0' && ch <= '9') {
+            x.val.push_back(ch - '0');
+            ch = is.get();
+        }
+        reverse(x.val.begin(), x.val.end());
+        x.maintain();
+        return is;
+    }
+    
+    ostream& operator<<(ostream &os, const BigInt &x) {
+        for (int i = x.val.size() - 1; i >= 0; i--) {
+            os << x.val[i];
+        }
+        return os;
+    }
+    
+    int main() {
+        BigInt a, b;
+        cin >> a >> b;
+        cout << "a < b: " << (a < b) << endl << endl; 
+        cout << "a + b: " << a + b << endl;
+        cout << "a += b: " << (a += b) << endl;
+        cout << "after a += b: " << a << endl << endl;
+        cout << "a++: " << (a++) << endl;
+        cout << "after a++: " << a << endl << endl;
+        cout << "++a: " << (++a) << endl;
+        cout << "after ++a: " << a << endl << endl;
+        return 0;
+    }
     ```
 
 ## 访问说明符
@@ -227,7 +660,42 @@ Matrix operator*(const Matrix &a, const Matrix &b) {
 
 ??? note "访问说明符"
     ```cpp
-    --8<-- "docs/course/program/code/oop/example_access_1.cpp"
+    #include <iostream>
+    using namespace std;
+    
+    class MyClass {
+        int a; // 默认权限是 private
+    
+    public: // 指定接下来的内容是 public
+        int b;
+    
+    private: // 指定接下来的内容是 private
+        void foo() {
+            cout << "foo" << endl;
+        }
+    
+    public: // 可以多次指定 public 或 private
+        void goo() {
+            cout << "goo" << endl;
+        }
+        void fooo() {
+            a = 10; // 不会报错，在类内可以访问 private
+            foo(); // 不会报错
+        }
+    };
+    
+    int main() {
+        MyClass c;
+        c.b = 100; // 不会报错，在类外可以访问 public
+        c.goo(); // 不会报错，输出 goo
+    
+        // c.a = 100; // 报错，类外不可访问 private
+        // c.foo(); // 报错
+    
+        c.fooo(); // 不会报错，通过 public 间接访问 private。a 被设为 10, 输出 foo
+            
+        return 0;
+    }
     ```
 
 ### 友元
@@ -252,7 +720,82 @@ Matrix operator*(const Matrix &a, const Matrix &b) {
 
 ??? note "参考代码"
     ```cpp
-    --8<-- "docs/course/program/code/oop/problem_access.cpp"
+    #include <bits/stdc++.h>
+    using namespace std;
+    
+    class CodeMonkey;
+    
+    class ProdoctDog {
+        vector<CodeMonkey> coders;
+    public:
+        void add_todolist(CodeMonkey &coder, int x);
+        void reduce_todolist(CodeMonkey &coder, int x);
+        void add_coder(const CodeMonkey &coder);
+        CodeMonkey& find_coder(string name);
+        void print_todolists();
+    };
+    
+    class CodeMonkey {
+    private: 
+        string name;
+        int todolist;
+    public:
+        friend ProdoctDog;
+        int sizeof_todolist();
+        CodeMonkey(string name, int todolist);
+    };
+    
+    void ProdoctDog::add_coder(const CodeMonkey &coder) {
+        coders.push_back(coder);
+    }
+    CodeMonkey& ProdoctDog::find_coder(string name) {
+        for (CodeMonkey &coder : coders) {
+            if (coder.name == name) {
+                return coder;
+            }
+        }
+    }
+    void ProdoctDog::print_todolists() {
+        for (CodeMonkey &coder : coders) {
+            cout << coder.name << " " << coder.sizeof_todolist() << endl;
+        }
+    }
+    void ProdoctDog::add_todolist(CodeMonkey &coder, int x) {
+        coder.todolist += x;
+    }
+    void ProdoctDog::reduce_todolist(CodeMonkey &coder, int x) {
+        coder.todolist -= x;
+    }
+    
+    int CodeMonkey::sizeof_todolist() {
+        return todolist;
+    }
+    CodeMonkey::CodeMonkey(string name, int todolist) : name(name), todolist(todolist) {}
+    
+    int main() {
+        int n, m;
+        cin >> n;
+        ProdoctDog dog;
+        for (int i = 1; i <= n; i++) {
+            string s; int x;
+            cin >> s >> x;
+            dog.add_coder(CodeMonkey(s, x));
+        }
+        cin >> m;
+        while (m--) {
+            string s;
+            int op, x;
+            cin >> s >> op >> x;
+            if (op == 0) {
+                dog.add_todolist(dog.find_coder(s), x);
+            } else {
+                dog.reduce_todolist(dog.find_coder(s), x);
+            }
+        }
+        dog.print_todolists();
+        return 0;
+    }
+    
     ```
 
 ## This 指针
@@ -428,7 +971,45 @@ foo<double>(); // 调用 double 类型对应的 foo 函数。
     可以的！看如下代码：
     
     ```cpp
-    --8<-- "docs/course/program/code/oop/example_pow_operator.cpp"
+    #include <bits/stdc++.h>
+    using namespace std;
+    
+    
+    struct MyPower {
+        int val;
+        MyPower(int val) : val(val) {}
+    };
+    struct MyInt {
+        int val;
+        MyInt(int val) : val(val) {}
+    };
+    
+    MyPower operator *(const MyInt &x) {
+        return MyPower(x.val);
+    }
+    
+    int quick_power(int x, int p) {
+        if (p == 1) return x;
+        int y = quick_power(x, p / 2);
+        int res = y * y;
+        if (p % 2 == 1) res = res * x;
+        return res;
+    }
+    
+    MyInt operator *(const MyInt &x, const MyPower &y) {
+        return MyInt(quick_power(x.val, y.val));
+    }
+    
+    ostream& operator<<(ostream &os, const MyInt &x) {
+        return (os << x.val);
+    }
+    
+    int main() {
+        MyInt a(3), b(4);
+        cout << a ** b << endl;
+        return 0;
+    }
+    // 输出 3 的 4 次方 81
     ```
     
     你知道背后的原理吗？
@@ -440,7 +1021,27 @@ foo<double>(); // 调用 double 类型对应的 foo 函数。
 来看下面的代码：
 
 ```cpp
---8<-- "docs/course/program/code/oop/example_inherit_1.cpp"
+#include <iostream>
+using namespace std;
+
+class BaseClass {
+public:
+    int a;
+};
+
+class MyClass : public BaseClass {
+public:
+    void print() {
+        cout << a << endl;
+    }
+};
+
+int main() {
+    MyClass c;
+    c.a = 114;
+    c.print();
+    return 0;
+}
 ```
 
 这揭示了继承的基本概念。如何声明 `MyClass` 继承于 `BaseClass`？我们在声明 `MyClass` 之后添加了 `: [继承方式] <继承类名>`。
@@ -463,7 +1064,27 @@ foo<double>(); // 调用 double 类型对应的 foo 函数。
 看这个例子：
 
 ```cpp
---8<-- "docs/course/program/code/oop/example_inherit_2.cpp"
+#include <iostream>
+using namespace std;
+
+class BaseClass {
+protected:
+    int a;
+};
+
+class MyClass : public BaseClass {
+public:
+    void print() {
+        cout << a << endl;
+    }
+};
+
+int main() {
+    MyClass c;
+    // c.a = 114; // 报错！不能在外部访问 protected 变量
+    c.print();
+    return 0;
+}
 ```
 
 除了我们已经知道的访问说明符，还有一个地方出现了 `public`。是在声明继承的时候选择的继承方式。
@@ -499,7 +1120,43 @@ C++ 标准库中有一个类叫 `queue`，实现了队列的数据结构。这�
 
 ??? note "参考代码"
     ```cpp
-    --8<-- "docs/course/program/code/oop/example_inherit_3.cpp"
+    #include <queue>
+    #include <iostream>
+    using namespace std;
+    
+    class MyQueue : public queue<int> {
+    public:
+        int pop() {
+            int res = front();
+            queue<int>::pop();
+            return res;
+        }
+    };
+    
+    int main() {
+        int n;
+        cin >> n;
+        MyQueue q;
+        while (n--) {
+            int op;
+            cin >> op;
+            if (op == 1) {
+                int x;
+                cin >> x;
+                q.push(x);
+            } else if (op == 2) {
+                if (!q.empty()) {
+                    cout << q.pop() << endl;
+                } else {
+                    cout << "Invalid" << endl;
+                }
+            } else {
+                cout << q.size() << endl;
+            }
+        }
+        return 0;
+    }
+    
     ```
 
 我们在子类中重写了 `pop` 函数，这样调用 `q.pop` 时，就会默认使用子类定义的函数。
@@ -524,7 +1181,63 @@ C++ 标准库中有一个类叫 `queue`，实现了队列的数据结构。这�
 
 ??? note "普通函数"
     ```cpp
-    --8<-- "docs/course/program/code/oop/example_virtual_1.cpp"
+    #include <iostream>
+    using namespace std;
+    
+    class A {
+    public:
+        void foo() {
+            cout << "A foo()" << endl;
+        }
+        void goo() {
+            cout << "A goo()" << endl;
+        }
+    };
+    
+    class B : public A {
+    public:
+        void goo() {
+            cout << "B goo()" << endl;
+        };
+    };
+    
+    int main() {
+        B x;
+        A *x_point_A = &x;
+        A &x_as_A = x;
+        A x_cut_A = x;
+        cout << "x:" << endl;
+        x.foo();
+        x.goo();
+        cout << endl << "x_point_A:" << endl;
+        x_point_A -> foo();
+        x_point_A -> goo();
+        cout << endl << "x_as_A:" << endl;
+        x_as_A.foo();
+        x_as_A.goo();
+        cout << endl << "x_cut_A:" << endl;
+        x_cut_A.foo();
+        x_cut_A.goo();
+        return 0;
+    }
+    
+    /*
+    x:
+    A foo()
+    B goo()
+    
+    x_point_A:
+    A foo()
+    A goo()
+    
+    x_as_A:
+    A foo()
+    A goo()
+    
+    x_cut_A:
+    A foo()
+    A goo()
+    */
     ```
 
 ![](images/oop/common.jpg)
@@ -539,7 +1252,71 @@ C++ 标准库中有一个类叫 `queue`，实现了队列的数据结构。这�
 
 ??? note "虚函数"
     ```cpp
-    --8<-- "docs/course/program/code/oop/example_virtual_2.cpp"
+    #include <iostream>
+    using namespace std;
+    
+    class A {
+    public:
+        virtual void foo() {
+            cout << "A foo()" << endl;
+        }
+        virtual void goo() {
+            cout << "A goo()" << endl;
+        }
+    };
+    
+    class B : public A {
+    public:
+        virtual void goo() {
+            cout << "B goo()" << endl;
+        };
+        virtual void hoo() {
+            cout << "B hoo()" << endl;
+        };
+    };
+    
+    int main() {
+        B x;
+        A *x_point_A = &x;
+        A &x_as_A = x;
+        A x_cut_A = x;
+        cout << "x:" << endl;
+        x.foo();
+        x.goo();
+        x.hoo();
+        cout << endl << "x_point_A:" << endl;
+        x_point_A -> foo();
+        x_point_A -> goo();
+        // x_point_A -> hoo(); // 编译错误
+        cout << endl << "x_as_A:" << endl;
+        x_as_A.foo();
+        x_as_A.goo();
+        // x_as_A.hoo(); // 编译错误
+        cout << endl << "x_cut_A:" << endl;
+        x_cut_A.foo();
+        x_cut_A.goo();
+        // x_cut_A.hoo(); // 编译错误
+        return 0;
+    }
+    
+    /*
+    x:
+    A foo()
+    B goo()
+    B hoo()
+    
+    x_point_A:
+    A foo()
+    B goo()
+    
+    x_as_A:
+    A foo()
+    B goo()
+    
+    x_cut_A:
+    A foo()
+    A goo()
+    */
     ```
 
 ![](images/oop/virtual.jpg)
@@ -565,7 +1342,98 @@ C++ 标准库中有一个类叫 `queue`，实现了队列的数据结构。这�
 
 ??? note "参考代码"
     ```cpp
-    --8<-- "docs/course/program/code/oop/problem_shape.cpp"
+    #include <bits/stdc++.h>
+    using namespace std;
+    
+    const float PI(3.14159f);
+    
+    class Shape {
+    public:
+        virtual float square()=0;
+        virtual void input()=0;
+    };
+    
+    class Circle : public Shape {
+    private:
+        float radius;
+    public:
+        void input() {
+            cin >> radius;
+        }
+        float square() {
+            return PI * radius * radius;
+        }
+    };
+    
+    class Square : public Shape {
+    private:
+        float length;
+    public:
+        void input() {
+            cin >> length;
+        }
+        float square() {
+            return length * length;
+        }
+    };
+    
+    class Rectangle : public Shape {
+    private:
+        float width, height;
+    public:
+        void input() {
+            cin >> width >> height;
+        }
+        float square() {
+            return width * height;
+        }
+    };
+    
+    class Trapezoid : public Shape {
+    private:
+        float lengtha, lengthb, height;
+    public:
+        void input() {
+            cin >> lengtha >> lengthb >> height;
+        }
+        float square() {
+            return (lengtha + lengthb) * height / 2;
+        }
+    };
+    
+    class Triangle : public Shape {
+    private:
+        float length, height;
+    public:
+        void input() {
+            cin >> length >> height;
+        }
+        float square() {
+            return length * height / 2;
+        }
+    };
+    
+    int main() {
+        vector<Shape *> vec;
+        vec.push_back(new Circle());
+        vec.push_back(new Square());
+        vec.push_back(new Rectangle());
+        vec.push_back(new Trapezoid());
+        vec.push_back(new Triangle());
+    
+        for (Shape *p : vec) {
+            p -> input();
+        }
+    
+        float sum(0);
+        for (Shape *p : vec) {
+            sum += p -> square();
+        }
+        printf("%.3f\n", sum);
+    
+        return 0;
+    }
+    
     ```
 
 ### 虚函数与模板

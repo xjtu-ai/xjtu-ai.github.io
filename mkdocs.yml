@@ -21,6 +21,10 @@ nav:
       - 课件&讲座: course/math/ppt.md
       - 真题: course/math/problem.md
       - 电子书: course/math/ebook.md
+    - 高数下: 
+      - 课程简介: course/math2/index.md
+      - 往届资料收集: course/math2/docs.md
+      - 真题: course/math2/problem.md
     - 线性代数与解析几何: 
       - 课程简介: course/algebra/index.md
       - 往届资料收集: course/algebra/docs.md
@@ -43,6 +47,53 @@ nav:
       - 课程简介: course/lunli/index.md
       - 课件: course/lunli/ppt.md
       - 复习资料: course/lunli/docs.md
+    - 数据结构与算法:
+      - 数据结构模板: course/ds/template.md
+      - 算法模板: course/ds/algorithm.md
+      - 更多算法的参考代码: course/ds/code.md
+      - 理论知识: course/ds/theory.md
+    - 人工智能的数学基础:
+      - 课程简介: course/csai/index.md
+      - 资料: course/csai/docs.md
+      - 真题: course/csai/problem.md
+    - 概率统计与随机过程:
+      - 课程简介: course/prob/index.md
+      - 资料: course/prob/docs.md
+      - 课件: course/prob/ppt.md
+      - 真题: course/prob/problem.md
+    - 人工智能的数学基础（下）:
+      - 24级复习资料: 
+        - 引论: 
+          - 向量和矩阵范数: course/csai2/1/1_1.md
+          - 误差: course/csai2/1/1_2.md
+          - 数值计算原则: course/csai2/1/1_3.md
+          - 历年真题: course/csai2/1/1_4.md
+        - 非线性方程的求解: 
+          - 必背公式和定理: course/csai2/2/2_1.md
+          - 迭代法: course/csai2/2/2_2.md
+          - 历年真题: course/csai2/2/2_3.md
+        - 线性方程组的求解: 
+          - 高斯消元法: course/csai2/3/3_1.md
+          - 矩阵分解法: course/csai2/3/3_2.md
+          - 追赶法: course/csai2/3/3_3.md
+          - 迭代法: course/csai2/3/3_4.md
+          - 误差分析: course/csai2/3/3_5.md
+          - 历年真题: course/csai2/3/3_6.md
+        - 函数插值与逼近: 
+          - 概念总览: course/csai2/4/4_1.md
+          - 拉格朗日插值: course/csai2/4/4_2.md
+          - 分段线性插值: course/csai2/4/4_3.md
+          - 牛顿插值: course/csai2/4/4_4.md
+          - 埃尔米特插值: course/csai2/4/4_5.md
+          - 三次样条插值: course/csai2/4/4_6.md
+          - 最佳一致逼近: course/csai2/4/4_7.md
+          - 最佳平方逼近: course/csai2/4/4_8.md
+        - 凸函数与凸优化:
+          - 凸集和凸函数: course/csai2/5/5_1.md
+          - 凸优化: course/csai2/5/5_2.md
+          - 历年真题: course/csai2/5/5_3.md
+      - 真题: course/csai2/problem.md
+
   - 竞赛:
     - 简介: competition/index.md
     - 数学建模: competition/math.md
@@ -65,7 +116,6 @@ theme:
     - content.action.edit
     - navigation.tabs
     - navigation.instant
-
   language: 'zh'
   palette:
     # Palette toggle for light mode
@@ -85,8 +135,10 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
-
+        
 markdown_extensions:
+  - toc:
+      toc_depth: 3
   - footnotes
   - admonition
   - pymdownx.details

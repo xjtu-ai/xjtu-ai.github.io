@@ -1,3 +1,4 @@
 site/*
 a.out
 .vscode/*
+.env
