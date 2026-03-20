@@ -93,6 +93,8 @@ nav:
           - 凸优化: course/csai2/5/5_2.md
           - 历年真题: course/csai2/5/5_3.md
       - 真题: course/csai2/problem.md
+    - 人工智能概论:
+      - 资料: course/ai_intro/docs.md
 
   - 竞赛:
     - 简介: competition/index.md
