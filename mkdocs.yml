@@ -93,6 +93,15 @@ nav:
           - 凸优化: course/csai2/5/5_2.md
           - 历年真题: course/csai2/5/5_3.md
       - 真题: course/csai2/problem.md
+    - 复变函数与积分变换:
+      - 复数与复变函数: course/complex/复数与复变函数.md
+      - 解析函数: course/complex/解析函数.md
+      - 复积分: course/complex/第三章.md
+      - 级数表示: course/complex/第四章.md
+      - 留数及其运用: course/complex/第五章.md
+      - 共形映射: course/complex/共形映射.md
+      - 傅里叶变换: course/complex/傅里叶变换.md
+      - 拉普拉斯变换: course/complex/拉普拉斯变换.md
     - 人工智能概论:
       - 资料: course/ai_intro/docs.md
 
