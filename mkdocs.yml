@@ -102,6 +102,8 @@ nav:
       - 共形映射: course/complex/共形映射.md
       - 傅里叶变换: course/complex/傅里叶变换.md
       - 拉普拉斯变换: course/complex/拉普拉斯变换.md
+    - 人工智能概论:
+      - 资料: course/ai_intro/docs.md
 
   - 竞赛:
     - 简介: competition/index.md
