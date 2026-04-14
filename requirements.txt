@@ -51,7 +51,7 @@ packaging==25.0
 paginate==0.5.7
 pandas==2.2.3
 pathspec==0.12.1
-pillow==11.2.1
+pillow==12.2.0
 platformdirs==4.3.8
 pydantic==2.11.9
 pydantic_core==2.33.2
