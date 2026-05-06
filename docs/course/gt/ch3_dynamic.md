@@ -34,7 +34,7 @@
 一个完整决策计划对应一个结果；动态博弈具有不对称性。不对称性会引发“相机选择”问题，即“可信性”的问题。
 <figure class="center">
 <div align="center">
-  <img src="img/ch3/concept/contingent.png" width="60%" />
+  <img src="img/ch3/01.png" width="60%" />
 </div>
 <figcaption><small>金矿博弈反映可信性问题，不同条件可信性有差异。</small></figcaption></figure>
 
@@ -60,7 +60,7 @@
 定义：由一个<u>动态博弈第一阶段以外</u>的某阶段开始的后续博弈阶段构成，有初始信息集和进行博弈所需的<u>全部信息</u>，能够自成一个博弈的原博弈组成部分。
 <figure class="center">
 <div align="center">
-  <img src="img/ch3/concept/sub_play.png" width="70%" />
+  <img src="img/ch3/02.png" width="70%" />
 </div>
 <figcaption><small>直观来讲，子博弈可表示为不包含根节点的从扩展形里取出的子树；值得注意，子博弈也可能不存在，比如信息集不可分割时。</small></figcaption></figure>
 
@@ -128,7 +128,7 @@
 蜈蚣博弈解释了逆推归纳法的局限性。在阶段较少的蜈蚣博弈中合作的可能更低，逆推归纳法比较符合；但在阶段多的情况下理性的博弈方更倾向合作先把蛋糕做大，再在一个普遍更高的得益水平上进行竞争。
 <figure class="center">
 <div align="center">
-  <img src="img/ch3/concept/wugong.png" width="70%" />
+  <img src="img/ch3/03.png" width="70%" />
 </div><figcaption><small>先合作后竞争，更接近理性博弈方的行为。</small></figcaption></figure>
 
 <em>4.3 **颤抖手均衡**：</em>
@@ -138,18 +138,18 @@
 *4.3.1 颤抖手均衡条件：*
 <figure class="center">
 <div align="center">
-  <img src="img/ch3/concept/shakyhand.png" width="80%" />
+  <img src="img/ch3/04.png" width="80%" />
 </div><figcaption><small>颤抖手均衡直观地说就是不怕对方乱来，所以不能包含那些不稳的策略。</small></figcaption></figure>
 
 *4.3.2 颤抖手均衡的例子：*
 <figure class="center">
 <div align="center">
-  <img src="img/ch3/concept/shakyex.png" width="70%" />
+  <img src="img/ch3/05.png" width="70%" />
 </div><figcaption><small>解释：对于博弈方一，选择R不会获得比L更高的得益，R是一个弱劣策略。而且博弈方2可能担心第三阶段博弈方1错选，可能选M，所以这条路径是很不稳定的。</small></figcaption></figure>
 
 <figure class="center">
 <div align="center">
-  <img src="img/ch3/concept/shakyex2.png" width="70%" />
+  <img src="img/ch3/06.png" width="70%" />
 </div><figcaption><small>解释：(3,3)收益是帕累托最优的，偏离的概率大大下降了而且R-N-T-V是唯一的子博弈完美纳什均衡。</small></figcaption></figure>
 
 <em>4.4 顺推归纳法：</em>
@@ -158,7 +158,7 @@
 
 <figure class="center">
 <div align="center">
-  <img src="img/ch3/concept/vandamme.png" width="70%" />
+  <img src="img/ch3/07.png" width="70%" />
 </div><figcaption><small>与颤抖手的提防对方犯错不同，顺推归纳是阅读对方偏离的目的，从而“协作”获得稳定而较优的得益。</small></figcaption></figure>
 
 <div style="page-break-after: always;">
@@ -182,7 +182,7 @@
 先默写子博弈完美纳什均衡得定义（或许不用）。
 <figure class="center">
 <div align="center">
-  <img src="img/ch3/exercise/3.1.png" width="80%" />
+  <img src="img/ch3/08.png" width="80%" />
 </div><figcaption><small></small></figcaption></figure>
 
 <div style="display:none">
@@ -190,30 +190,30 @@
 *5.2 思考练习四*
 <figure class="center">
 <div align="center">
-  <img src="img/ch3/exercise/3.4.1.png" width="80%" />
+  <img src="img/ch3/09.png" width="80%" />
 </div><figcaption><small></small></figcaption></figure>
 
 <figure class="center">
 <div align="center">
-  <img src="img/ch3/exercise/3.4.2.png" width="80%" />
+  <img src="img/ch3/10.png" width="80%" />
 </div><figcaption><small></small></figcaption></figure>
 </div>
 
 *5.2 思考练习五：设一四阶段两博弈方之间的动态博弈如下图所示。找出全部子博弈，讨论该博弈中的可信性问题，求子博弈完美纳什均衡策略组合和博弈的结果：*
 <figure class="center">
 <div align="center">
-  <img src="img/ch3/exercise/3.5.png" width="80%" />
+  <img src="img/ch3/11.png" width="80%" />
 </div><figcaption><small>博弈方1第一阶段选b第三阶段e;博弈方2第二阶段选d第四阶段选h。结果为博弈方1第一阶段选b结束博弈，得益为(5,3)。</small></figcaption></figure>
 
 *5.3 思考练习题七：*
 <figure class="center">
 <div align="center">
-  <img src="img/ch3/exercise/3.7.1.png" width="80%" />
+  <img src="img/ch3/12.png" width="80%" />
 </div><figcaption><small></small></figcaption></figure>
 
 <figure class="center">
 <div align="center">
-  <img src="img/ch3/exercise/3.7.2.png" width="80%" />
+  <img src="img/ch3/13.png" width="80%" />
 </div><figcaption><small></small></figcaption></figure>
 
 <div style="display:none">
@@ -221,32 +221,32 @@
 *5.5 补充练习题二：*
 <figure class="center">
 <div align="center">
-  <img src="img/ch3/exercise/p3.2.1.png" width="80%" />
+  <img src="img/ch3/14.png" width="80%" />
 </div><figcaption><small></small></figcaption></figure>
 
 <figure class="center">
 <div align="center">
-  <img src="img/ch3/exercise/p3.2.2.png" width="80%" />
+  <img src="img/ch3/15.png" width="80%" />
 </div><figcaption><small></small></figcaption></figure>
 
 *5.6 补充练习题六：*
 <figure class="center">
 <div align="center">
-  <img src="img/ch3/exercise/p3.6.1.png" width="80%" />
+  <img src="img/ch3/16.png" width="80%" />
 </div><figcaption><small></small></figcaption></figure>
 
 <figure class="center">
 <div align="center">
-  <img src="img/ch3/exercise/p3.6.2.png" width="80%" />
+  <img src="img/ch3/17.png" width="80%" />
 </div><figcaption><small></small></figcaption></figure>
 
 <figure class="center">
 <div align="center">
-  <img src="img/ch3/exercise/p3.6.3.png" width="80%" />
+  <img src="img/ch3/18.png" width="80%" />
 </div><figcaption><small></small></figcaption></figure>
 
 <figure class="center">
 <div align="center">
-  <img src="img/ch3/exercise/p3.6.4.png" width="80%" />
+  <img src="img/ch3/19.png" width="80%" />
 </div><figcaption><small></small></figcaption></figure>
 </div>
