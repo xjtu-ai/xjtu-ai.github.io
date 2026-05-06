@@ -1,0 +1,31 @@
+{
+    "default": true,
+    "MD013": false,
+    "MD025": {
+        "level": 1,
+        "front_matter_title": ""
+    },
+    "MD029": {
+        "style": "ordered"
+    },
+    "MD030": {
+        "ul_single": 1,
+        "ol_single": 1,
+        "ul_multi": 1,
+        "ol_multi": 1
+    },
+    "MD033": false,
+    "MD034": false,
+    "MD036": false,
+    "MD041": false,
+    "MD046": false,
+    "MD048": {
+        "style": "backtick"
+    },
+    "MD049": {
+        "style": "asterisk"
+    },
+    "MD050": {
+        "style": "asterisk"
+    }
+}
