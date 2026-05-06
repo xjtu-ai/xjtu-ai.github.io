@@ -104,6 +104,14 @@ nav:
       - 拉普拉斯变换: course/complex/拉普拉斯变换.md
     - 人工智能概论:
       - 资料: course/ai_intro/docs.md
+    - 博弈论:
+      - 课程简介: course/gt/index.md
+      - 第一章 导论: course/gt/ch1_intro.md
+      - 第二章 完全信息静态博弈: course/gt/ch2_static.md
+      - 第三章 完全且完美信息动态博弈: course/gt/ch3_dynamic.md
+      - 第四章 重复博弈: course/gt/ch4_repeated.md
+      - 第五章 完全但不完美信息动态博弈: course/gt/ch5_imperfect.md
+      - 第六章 不完全信息静态博弈: course/gt/ch6_incomplete.md
 
   - 竞赛:
     - 简介: competition/index.md
