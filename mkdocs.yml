@@ -104,6 +104,15 @@ nav:
       - 拉普拉斯变换: course/complex/拉普拉斯变换.md
     - 人工智能概论:
       - 资料: course/ai_intro/docs.md
+    - 深度学习工具与平台:
+      - 深度神经网络基础与计算框架: course/AiSys/system1/SystemforAI-1 深度神经网络基础与计算框架.md
+      - PyTorch 基础与实践: course/AiSys/system2/SystemforAI-2 深度学习框架Pytorch基础与实践.md
+      - 矩阵计算体系结构: course/AiSys/system3/SystemforAI-3-Computer architecture for Matrix computation.md
+      - AI 编译器与编译优化: course/AiSys/第四章.md
+      - 神经网络的稀疏化与轻量化: course/AiSys/第五章.md
+      - 分布式训练: course/AiSys/第六章.md
+      - 深度学习集群调度: course/AiSys/第七章.md
+      - AI 安全与防御: course/AiSys/第八章.md
     - 博弈论:
       - 课程简介: course/gt/index.md
       - 第一章 导论: course/gt/ch1_intro.md
