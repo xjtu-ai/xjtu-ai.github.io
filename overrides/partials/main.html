@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+  {{ super() }}
+  <script>
+  window.MathJax = {
+    tex: {
+      packages: {'[+]': ['ams', 'boldsymbol', 'noerrors', 'noundefined']},
+      tags: 'ams',
+      inlineMath: [['\\(', '\\)'], ['$', '$']],
+      displayMath: [['\\[', '\\]'], ['$$', '$$']]
+    },
+    options: {
+      processHtmlClass: "arithmatex",
+      ignoreHtmlClass: ".*|"
+    }
+  };
+
+  document$.subscribe(() => {
+    MathJax.startup.output.clearCache();
+    MathJax.typesetClear();
+    MathJax.typesetPromise();
+  });
+  </script>
+{% endblock %}
