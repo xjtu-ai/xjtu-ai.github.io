@@ -143,6 +143,7 @@ nav:
 
 theme:
   name: material
+  custom_dir: overrides
   features:
     - content.code.copy
     - content.action.edit
@@ -174,7 +175,16 @@ markdown_extensions:
   - footnotes
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
+  
+  # ─── Mermaid 图表支持 ───
+  # 使用 SuperFences 自定义 fence
+  - pymdownx.superfences:
+      preserve_tabs: true
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.highlight:
@@ -200,5 +210,5 @@ markdown_extensions:
       custom_checkbox: true
 
 extra_javascript:
-  - javascripts/mathjax.js
+  # - javascripts/mathjax.js
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js
