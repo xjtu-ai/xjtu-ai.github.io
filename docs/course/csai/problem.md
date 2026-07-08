@@ -1,3 +1,8 @@
+## 2025春CSAI期末答案
+
+??? note "2025春CSAI期末答案"
+    <iframe loading="lazy" src="/static/course/csai/problem/2025春CSAI期末答案.pdf" type="application/pdf" width=100% height=1000px></iframe>
+
 ## 2025春CSAI回忆版试题（这是人智真题）
 
 **题解由 AI 提供。**

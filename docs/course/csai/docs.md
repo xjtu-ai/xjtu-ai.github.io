@@ -1,3 +1,17 @@
+## CSAI考试大纲
+
+本文件为 2025 年春季学期「计算机科学与人工智能的数学基础」课程的考试大纲，明确列出了考试范围与各模块的权重分配。涵盖命题逻辑与谓词逻辑、集合论（关系、映射、势与可数性）、图论（欧拉图与哈密顿图、平面图与着色、树与匹配）、代数系统（群/环/域的定义与性质）、矩阵计算（SVD 分解、Moore-Penrose 广义逆）、PCA 主成分分析，以及组合计数等内容。适合在复习初期对照大纲梳理知识体系。
+
+??? note "CSAI考试大纲"
+    <iframe loading="lazy" src="/static/course/csai/docs/CSAI考试大纲.pdf" type="application/pdf" width=100% height=1000px></iframe>
+
+## CSAI期末资料
+
+本资料由 AI 学组编写，是 CSAI 课程的期末复习资料。涵盖数理逻辑（命题公式、真值表、范式与推理规则）、集合论（幂集、基数、映射与双射构造）、图论（欧拉/哈密顿图的判定定理、平面图的欧拉公式与着色、最小生成树）、代数系统（群、陪集分解、同构与同态）、矩阵论（特征值与特征向量、奇异值分解、Moore-Penrose 逆）以及回归分析（最小二乘估计、帽子矩阵）等核心模块。每个模块配有知识点速查表与典型例题精讲，适合考前全面复习。
+
+??? note "CSAI期末资料"
+    <iframe loading="lazy" src="/static/course/csai/docs/CSAI期末资料.pdf" type="application/pdf" width=100% height=1000px></iframe>
+
 ## [AI学组]CSAI矩阵论与回归分析复习资料2025
 
 文件系统梳理了矩阵论与回归分析的核心内容：  

@@ -1,3 +1,8 @@
+## 【AI学组】2025春 概率统计与随机过程参考答案
+
+??? note "【AI学组】2025春 概率统计与随机过程参考答案"
+    <iframe loading="lazy" src="/static/course/prob/problem/【AI学组】2025春 概率统计与随机过程参考答案.pdf" type="application/pdf" width=100% height=1000px></iframe>
+
 ## 2025春 概率统计与随机过程回忆版
 
 ??? note "2025春 概率统计与随机过程回忆版"
