@@ -1,5 +1,10 @@
 此页面收集了往届程设学科的真题。请读者自行取用。
 
+## 【AI学组】程序设计2024期中参考答案及解析
+
+??? note "【AI学组】程序设计2024期中参考答案及解析"
+    <iframe loading="lazy" src="/static/course/program/problem/【AI学组】程序设计2024期中参考答案及解析.pdf" type="application/pdf" width=100% height=1000px></iframe>
+
 ## 2023-A方案 A卷
 
 ??? note "2023-A方案 A卷"

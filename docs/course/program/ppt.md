@@ -1,5 +1,82 @@
 此页面收集了计算机实验班的课件。有 AI 生成的摘要。请读者自行取用。
 
+## 程序设计-绪论
+
+本课件为计算机程序设计课程的绪论部分，介绍计算机科学的基本概念与课程框架。内容包括程序设计的重要性、计算机系统层次结构（从机器语言到高级语言）、C++ 程序的基本结构与开发流程、编程工具链（编辑器、编译器、调试器）的使用，以及课程考核方式与学习建议。适合作为课程入门的第一讲。
+
+??? note "程序设计-绪论"
+    <iframe loading="lazy" src="/static/course/program/ppt/1计算机程序设计-绪论.pdf" type="application/pdf" width=100% height=1000px></iframe>
+
+## 程序设计-数据
+
+本课件讲解程序设计中的数据表示与基本数据类型。内容包括冯·诺依曼体系结构、不同进制（二进制、八进制、十六进制）及其转换、数据存储单位（比特与字节）、基本数据类型（整型、字符型、浮点型、布尔型）的存储宽度与取值范围，以及变量的声明、初始化、命名规范与作用域。
+
+??? note "程序设计-数据"
+    <iframe loading="lazy" src="/static/course/program/ppt/2计算机程序设计-数据 (2).pdf" type="application/pdf" width=100% height=1000px></iframe>
+
+## 程序设计-表达式和分支控制结构
+
+本课件介绍 C++ 中的表达式与分支控制结构。内容包括各类运算符（算术、关系、逻辑、位运算、赋值）及其优先级与结合律、表达式的求值规则与类型转换，以及 if/else 和 switch 等条件分支语句的使用方法。
+
+??? note "程序设计-表达式和分支控制结构"
+    <iframe loading="lazy" src="/static/course/program/ppt/3计算机程序设计-表达式和分支控制结构.pdf" type="application/pdf" width=100% height=1000px></iframe>
+
+## 程序设计-循环与其它
+
+本课件讲解 C++ 中的循环控制结构。内容包括 while、do-while 和 for 循环的语法与适用场景，break 与 continue 语句的使用，循环嵌套，以及常见的循环算法模式（累加、遍历、搜索等）。还涉及文本输入处理与 cin 的使用技巧。
+
+??? note "程序设计-循环与其它"
+    <iframe loading="lazy" src="/static/course/program/ppt/4计算机程序设计-循环与其它.pdf" type="application/pdf" width=100% height=1000px></iframe>
+
+## 程序设计-函数数组
+
+本课件介绍 C++ 中函数与数组的使用。函数部分涵盖函数定义与调用、参数传递机制（按值传递与按引用传递）、函数重载与递归；数组部分涵盖一维/多维数组的声明与初始化、数组与指针的关系、字符串（C 风格字符串与字符数组）的操作方法及常见陷阱。
+
+??? note "程序设计-函数数组"
+    <iframe loading="lazy" src="/static/course/program/ppt/5计算机程序设计-函数数组 .pdf" type="application/pdf" width=100% height=1000px></iframe>
+
+## 程序设计-指针
+
+本课件深入讲解 C++ 中指针的概念与使用。内容包括指针的定义与初始化、取地址运算符（&）与解引用运算符（*）、指针与数组的关系、指针运算（算术运算与比较）、空指针与野指针问题，以及指针在函数参数传递和动态内存分配中的应用。
+
+??? note "程序设计-指针"
+    <iframe loading="lazy" src="/static/course/program/ppt/6计算机程序设计-指针.pdf" type="application/pdf" width=100% height=1000px></iframe>
+
+## 程序设计-结构体
+
+本课件讲解 C++ 中结构体的定义与使用。内容包括结构体的声明与成员访问、结构体数组、结构体指针、结构体作为函数参数，以及结构体与类的区别与联系，为后续面向对象编程的学习打下基础。
+
+??? note "程序设计-结构体"
+    <iframe loading="lazy" src="/static/course/program/ppt/7计算机程序设计-结构体.pdf" type="application/pdf" width=100% height=1000px></iframe>
+
+## 程序设计-文件读写操作与库函数
+
+本课件介绍 C++ 中的文件读写操作与常用库函数。内容包括文件流（ifstream/ofstream/fstream）的使用、文本文件与二进制文件的读写、文件打开模式与错误处理，以及 C++ 标准库中常用函数的介绍。
+
+??? note "程序设计-文件读写操作与库函数"
+    <iframe loading="lazy" src="/static/course/program/ppt/8new计算机程序设计-文件读写操作与库函数.pdf" type="application/pdf" width=100% height=1000px></iframe>
+
+## 程序设计-类与对象
+
+本课件讲解 C++ 面向对象编程的核心概念——类与对象。内容包括类的定义与成员访问控制（public/private/protected）、构造函数与析构函数、拷贝构造函数、this 指针、静态成员、友元函数与友元类，以及运算符重载等进阶主题。
+
+??? note "程序设计-类与对象"
+    <iframe loading="lazy" src="/static/course/program/ppt/9--new计算机程序设计-类与对象.pdf" type="application/pdf" width=100% height=1000px></iframe>
+
+## 程序设计-Python对比（上）
+
+本课件将 C++ 与 Python 语言进行对比讲解。上半部分涵盖两种语言在基本语法、数据类型、控制结构等方面的异同，帮助有 Python 基础的同学快速理解 C++ 的语法特点。
+
+??? note "程序设计-Python对比（上）"
+    <iframe loading="lazy" src="/static/course/program/ppt/10-test计算机程序设计-Python对比-1.pdf" type="application/pdf" width=100% height=1000px></iframe>
+
+## 程序设计-Python对比（下）
+
+本课件为 C++ 与 Python 对比讲解的下半部分。继续深入两种语言在函数定义、面向对象机制、异常处理、文件操作等方面的异同，帮助同学建立多语言编程的比较视角，理解不同编程范式的设计哲学。
+
+??? note "程序设计-Python对比（下）"
+    <iframe loading="lazy" src="/static/course/program/ppt/11-test计算机程序设计-Python对比-22.pdf" type="application/pdf" width=100% height=1000px></iframe>
+
 ## 0-overview-p
 
 西安交通大学计算机学院副教授李昊开设的计算机程序设计课程概述了学习计算机科学的重要性，包括其高薪就业前景和广泛的应用领域，如生成式人工智能、芯片设计与制造等。课程强调编程与写作的相似性，要求学生掌握C++语言的基础语法，编写高效且优雅的代码，并解决从简单到中等难度的问题。课程使用《C++ Primer Plus》等教材，考核方式包括平时成绩和期末考试，后者为全机试编程。教学团队还包括唐亚哲教授。
