@@ -128,6 +128,20 @@ nav:
       - 第六章 不完全信息静态博弈: course/gt/ch6_incomplete.md
     - 机器学习:
       - 自编复习自测题: course/ml/《机器学习》自测参考题.md
+    - 现代物理与人工智能:
+      - 复习资料: course/modern_physics/docs.md
+      - 真题回忆: course/modern_physics/problem.md
+    - 电子技术与系统:
+      - 复习资料:
+        - 数电复习资料: course/electronics/digital.md
+        - 数字逻辑与 Verilog HDL: course/electronics/verilog.md
+        - SystemVerilog 复习报告: course/electronics/systemverilog.md
+        - PDF 资料: course/electronics/docs.md
+      - 真题: course/electronics/problem.md
+    - 认知心理学:
+      - 复习笔记: course/psychology/notes.md
+      - 复习资料: course/psychology/docs.md
+      - 真题回忆: course/psychology/problem.md
 
   - 竞赛:
     - 简介: competition/index.md
