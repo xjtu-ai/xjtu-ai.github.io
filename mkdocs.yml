@@ -107,6 +107,11 @@ nav:
       - 拉普拉斯变换: course/complex/拉普拉斯变换.md
     - 人工智能概论:
       - 资料: course/ai_intro/docs.md
+    - 认知心理学:
+      - 课件: course/cog_psych/ppt.md
+      - 复习笔记: course/cog_psych/notes.md
+      - 复习资料: course/cog_psych/docs.md
+      - 真题回忆: course/cog_psych/problem.md
     - 深度学习工具与平台:
       - 真题解析: course/AiSys/考题汇总.md
       - 复习资料:
@@ -138,10 +143,6 @@ nav:
         - SystemVerilog 复习报告: course/electronics/systemverilog.md
         - PDF 资料: course/electronics/docs.md
       - 真题: course/electronics/problem.md
-    - 认知心理学:
-      - 复习笔记: course/psychology/notes.md
-      - 复习资料: course/psychology/docs.md
-      - 真题回忆: course/psychology/problem.md
 
   - 竞赛:
     - 简介: competition/index.md
