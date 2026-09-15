@@ -72,16 +72,16 @@ $$
 
 |缩写|含义|符号|离散数学表达式|
 |:--:|:--:|:--:|:--:|
-|AND|与门|<img src="images/and_gate.png" style="height: 2em; vertical-align: middle;" alt="AND">|$p\land q$|
-|OR|或门|<img src="images/or_gate.png" style="height: 2em; vertical-align: middle;" alt="or">|$p\lor q$|
-|XOR|异或门|<img src="images/xor_gate.png" style="height: 2em; vertical-align: middle;" alt="XOR">|$(\lnot p\land q)\lor(p\land \lnot q)$|
-|NOT|非门|<img src="images/not_gate.png" style="height: 2em; vertical-align: middle;" alt="NOT">|$\lnot p$|
+|AND|与门|<img src="../images/and_gate.png" style="height: 2em; vertical-align: middle;" alt="AND">|$p\land q$|
+|OR|或门|<img src="../images/or_gate.png" style="height: 2em; vertical-align: middle;" alt="or">|$p\lor q$|
+|XOR|异或门|<img src="../images/xor_gate.png" style="height: 2em; vertical-align: middle;" alt="XOR">|$(\lnot p\land q)\lor(p\land \lnot q)$|
+|NOT|非门|<img src="../images/not_gate.png" style="height: 2em; vertical-align: middle;" alt="NOT">|$\lnot p$|
 
 特别的，在很多情况下，单个气泡就可以代表取反，在其它逻辑门的输入或输出端加上气泡，就可以产生更多逻辑门。比如与非门：
 
 |缩写|含义|符号|离散数学表达式|
 |:--:|:--:|:--:|:--:|
-|NAND|与非门|<img src="images/nand_gate.png" style="height: 2em; vertical-align: middle;" alt="NAND">|$\lnot (p\land q)$|
+|NAND|与非门|<img src="../images/nand_gate.png" style="height: 2em; vertical-align: middle;" alt="NAND">|$\lnot (p\land q)$|
 
 读者可以自己尝试构造 XNOR 门。
 
@@ -280,7 +280,7 @@ $$
     - $S = A \oplus B$
     - $C_{out} = AB$
 
-<img src="images/half_adder.png" style="height: 4em; vertical-align: middle;" alt="Half Adder">
+<img src="../images/half_adder.png" style="height: 4em; vertical-align: middle;" alt="Half Adder">
 
 ### 全加器
 
@@ -303,7 +303,7 @@ $$
 - **功能**：$Y = D_k$，其中 $k$ 是选择信号 $S$ 代表的数值。
 - **逻辑表达式**（2选1）：$Y = S D_1 + \overline S D_0$
 
-<img src="images/2mux.png" style="height: 6em; vertical-align: middle;" alt="2MUX">
+<img src="../images/2mux.png" style="height: 6em; vertical-align: middle;" alt="2MUX">
 
 用双路选择器搭建多路选择器留作例题。
 
@@ -343,7 +343,7 @@ $$
 所谓锁存器，是指能够保持状态的电子元件。一个最基本的锁存器是**双稳态电路**，由两个首尾连接的非门组成。
 
 <div style="display: flex; flex-wrap: nowrap; align-items: center;">
-<img src="images/bistable.png" style="height: 8em; vertical-align: middle;" alt="Bistable">
+<img src="../images/bistable.png" style="height: 8em; vertical-align: middle;" alt="Bistable">
 </div>
 
 双稳态电路存储了一个二进制值 Q。这个 Q 不会是竞争态或浮空态，一定是稳态的 0 或 1。问题也很显然，我们没办法控制究竟是 0 还是 1。不要想着往 Q 端口输入信号，因为要知道非门其实是有电源的，这样只会造成竞争态 X，并不能大力出奇迹。你的输入是 VDD，非门的驱动也是 VDD，凭什么你能超过非门呢？
@@ -351,7 +351,7 @@ $$
 显然，锁存的基本结构应该是两个非门。但是，为了能够控制 Q，我们需要有一个输入信号，能够覆盖原有的 Q 值。什么东西能实现 overwrite 呢？不难想到，可以用或门。或门的一个输入是外部输入，另一个输入是锁存输入，当外部输入为 1 时，无论锁存输入是什么，输出结果都是 1。总的来说，我们需要两个或非门。这就是 **SR 锁存器**，具有 **S**et，**R**eset 两个输入端。
 
 <div style="display: flex; flex-wrap: nowrap; align-items: center;">
-<img src="images/SR_map.png" style="height: 6em; vertical-align: middle;" alt="SR-map"><img src="images/SR_symbol.png" style="height: 6em; vertical-align: middle;" alt="SR-symbol">
+<img src="../images/SR_map.png" style="height: 6em; vertical-align: middle;" alt="SR-map"><img src="../images/SR_symbol.png" style="height: 6em; vertical-align: middle;" alt="SR-symbol">
 </div>
 
 聪明的读者容易想到，与门也可以 overwrite。不妨自行尝试使用与门和非门构造 SR 锁存器。
@@ -359,7 +359,7 @@ $$
 SR 锁存器的一大问题是竞争问题。当 S 和 R 都是 1 时，内部会产生竞争态。为了解决这个问题，添加几个门就能得到 **D 锁存器**：
 
 <div style="display: flex; flex-wrap: nowrap; align-items: center;">
-<img src="images/D_latch.png" style="height: 8em; vertical-align: middle;" alt="D Latch">
+<img src="../images/D_latch.png" style="height: 8em; vertical-align: middle;" alt="D Latch">
 </div>
 
 观察上面的电路图，可以得到这样的结论：
@@ -377,7 +377,7 @@ SR 锁存器的一大问题是竞争问题。当 S 和 R 都是 1 时，内部�
 理想的情况是对电路稍加修改，让 D 在 CLK 的上升沿（从 0 变成 1 的瞬间）被写入。这就是 D 触发器。
 
 <div style="display: flex; flex-wrap: nowrap; align-items: center;">
-<img src="images/FF_map.png" style="height: 8em; vertical-align: middle;" alt="FF-map"><img src="images/FF_symbol.png" style="height: 8em; vertical-align: middle;" alt="FF-symbol">
+<img src="../images/FF_map.png" style="height: 8em; vertical-align: middle;" alt="FF-map"><img src="../images/FF_symbol.png" style="height: 8em; vertical-align: middle;" alt="FF-symbol">
 </div>
 
 这里，我们命名左边的锁存器为**主锁存器**，右边的锁存器为**从锁存器**。
