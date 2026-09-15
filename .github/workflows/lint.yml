@@ -15,7 +15,7 @@ jobs:
       - id: changed-markdown
         uses: tj-actions/changed-files@v46
         with:
-          separator: " "
+          separator: "\n"
           files: |
             **/*.md
 
@@ -27,4 +27,8 @@ jobs:
 
       - name: Lint changed markdown files
         if: steps.changed-markdown.outputs.any_changed == 'true'
-        run: markdownlint-cli2 ${{ steps.changed-markdown.outputs.all_changed_files }}
+        env:
+          CHANGED_MARKDOWN: ${{ steps.changed-markdown.outputs.all_changed_files }}
+        run: |
+          mapfile -t files <<< "$CHANGED_MARKDOWN"
+          markdownlint-cli2 --no-globs "${files[@]}"
