@@ -32,3 +32,14 @@ git submodule sync
 git submodule update --init --recursive
 mkdocs build
 ```
+
+## 检查坏引用
+
+构建之后建议检查站内引用（图片、链接、`/static/...` 的 PDF）是否都能解析到实际文件：
+
+```bash
+mkdocs build --strict
+python3 tools/check_refs.py site --check-static
+```
+
+MkDocs 只会重写 Markdown 语法（`![alt](a.png)`）里的相对路径，直接写在 Markdown 里的 raw HTML（如 `<img src="images/x.png">`）会原样输出。而页面使用的是目录式 URL（`a.md` 对应 `/a/`），所以这类引用很容易指错目录，导致线上 404，而且 `mkdocs build --strict` 检查不出来。CI 的 compile-check 已经包含这一步。
