@@ -107,6 +107,8 @@ nav:
       - 拉普拉斯变换: course/complex/拉普拉斯变换.md
     - 人工智能概论:
       - 资料: course/ai_intro/docs.md
+    - 认知心理学:
+      - 课件: course/cog_psych/ppt.md
     - 深度学习工具与平台:
       - 真题解析: course/AiSys/考题汇总.md
       - 复习资料:
