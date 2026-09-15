@@ -28,3 +28,5 @@ jobs:
             mkdocs-material-
       - run: pip install mkdocs-material 
       - run: mkdocs build --strict
+      - name: Check local references (images / assets / links)
+        run: python3 tools/check_refs.py site --check-static
