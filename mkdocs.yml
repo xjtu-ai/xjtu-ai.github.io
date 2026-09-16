@@ -162,7 +162,6 @@ nav:
 
 theme:
   name: material
-  custom_dir: overrides
   features:
     - content.code.copy
     - content.action.edit
@@ -229,5 +228,7 @@ markdown_extensions:
       custom_checkbox: true
 
 extra_javascript:
-  # - javascripts/mathjax.js
+  # 顺序不能调换：mathjax.js 里写了 MathJax 配置和 navigation.instant 的重新排版钩子，
+  # 必须在本体之前加载（也见该文件开头的注释）。
+  - javascripts/mathjax.js
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js
