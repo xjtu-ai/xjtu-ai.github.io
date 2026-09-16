@@ -2,6 +2,24 @@
 
 其实没有什么需要刻意遵守的规则，本文更多是教你如何使用 Markdown。
 
+## 提交前的检查（CI 必选项）
+
+每个 Pull Request 都必须通过下面两项检查，**它们是合入的必要条件**：
+
+| 检查 | 内容 | 本地复现 |
+| :--- | :--- | :--- |
+| **build** | `mkdocs build --strict`：任何警告都会被视为错误，并会检查站内引用（图片、链接、`/static/...` 的 PDF）是否都能找到 | 见 [本地部署](./compile.md) |
+| **markdownlint** | 检查本次改动涉及到的 Markdown 文件，配置见 `.markdownlint.json` | `npx markdownlint-cli2 --no-globs <你改动的文件>` |
+
+???+ tip "CI 报错怎么办"
+    大多数报错都很好改，不用慌：
+
+    - 报错信息里会写清楚**文件、行号和规则名**（如 `MD007`、`MD009`），对照本文改即可；
+    - 看不懂的话，在 Pull Request 里 @ 仓库维护者（见 [参与贡献](./contribute.md)），或者到 [Issues](https://github.com/xjtu-ai/xjtu-ai.github.io/issues) 提问；
+    - 也可以直接把 CI 日志丢给 AI 助手（「AI 大人」），告诉它规则名和行号，通常一次就能改对。
+
+    另外，检查只针对**你改动的文件**，仓库里旧文件遗留的问题不必顺手修复（当然欢迎）。
+
 ## 关于缩进的要求
 
 这非常重要，网站使用的 python-markdown 渲染工具只能识别 4 格的缩进。因此请遵守以下规范：
@@ -21,9 +39,9 @@
         $$
         \text{公式 2}
         $$
-    
+
     2. 二级列表
-    
+
 - 一级列表
 
 对应的 Markdown 源码如下：
@@ -40,7 +58,7 @@
         $$
         \text{公式 2}
         $$
-    
+
     2. 二级列表
 
 - 一级列表
@@ -77,9 +95,9 @@ PDF 文档的摘要
 
 ???+ note "效果"
     ### 巧用换元积分法一题九解
-    
+
     本文探讨了换元积分法在解决不定积分问题中的应用和技巧。作者通过一道具体的积分习题，展示了九种不同的换元积分解法，包括三角代换、双曲代换、倒代换等常用技巧。这些方法涉及将被积函数变形以适应基本积分公式，以及通过分解被积函数并逐步凑微元变形来解决积分问题。文章强调，不定积分的结果是一个原函数的集合，通常表示为一个原函数加上任意常数。重要的是，只要积分结果的导数等于被积函数，该结果就是正确的，即使形式上可能与参考答案不同。通过这些解法，作者旨在提高学生在积分方面的水平，鼓励他们在实践中探索和总结换元积分的技巧。
-    
+
     ??? note "巧用换元积分法一题九解"
         <iframe loading="lazy" src="/static/course/math/docs/巧用换元积分法一题九解.pdf" type="application/pdf" width=100% height=1000px></iframe>
 
@@ -93,7 +111,7 @@ PDF 文档的摘要
     from openai import OpenAI
     import sys
     import os
-    
+
     key = os.getenv('MOONSHOT_AI_KEY') # 或者填入 API key
     outdir = '/static/course/csai/'
     if outdir == "" :
@@ -101,9 +119,9 @@ PDF 文档的摘要
     path = Path(sys.argv[1])
     basename = path.stem
     filename = path.name
-    
+
     print("## %s\n" % basename)
-    
+
     if key:
         client = OpenAI(
             api_key = key,
@@ -111,7 +129,7 @@ PDF 文档的摘要
         )
         file_object = client.files.create(file=path, purpose="file-extract")
         file_content = client.files.content(file_id=file_object.id).text
-        
+
         messages = [
             {
                 "role": "system",
@@ -123,7 +141,7 @@ PDF 文档的摘要
             },
             {"role": "user", "content": "请生成上传文件的摘要。字数不要超过 300 字。使用 Markdown 语法标记输出。使用 Latex 语法输出数学公式"},
         ]
-        
+
         try :
             completion = client.chat.completions.create(
                 model="kimi-k2-0905-preview",
@@ -132,12 +150,12 @@ PDF 文档的摘要
             )
             print(completion.choices[0].message.content)
             print("")
-        
+
         except :
             print("调用 API 失败")
-        
+
         client.files.delete(file_id=file_object.id)
-    
+
     print("??? note \"%s\"\n    <iframe loading=\"lazy\" src=\"%s%s\" type=\"application/pdf\" width=100%% height=1000px></iframe>\n" % (basename, outdir, filename))
     ```
 
@@ -145,14 +163,14 @@ PDF 文档的摘要
 
 ## Markdown 的格式要求
 
--   不要使用如 `<h1>` 或者 `# 标题` 的一级标题。
--   标题要空一个英文半角空格，例如：`## 简介`。
--   列表：
-    -   列表前要有空行，新开一段。
-    -   如果上一行是普通段落、加粗提示（如 `**定义**：`、`其中：`、`主要性质：`）或引用结束行，也要额外空一行再开始列表。
-    -   使用有序列表（如 `1. 例子`）时，点号后要有空格。
--   行间公式前后各要有一行空行，否则会被当做是行内公式。
-    -   推荐写法如下：
+- 不要使用如 `<h1>` 或者 `# 标题` 的一级标题。
+- 标题要空一个英文半角空格，例如：`## 简介`。
+- 列表：
+    - 列表前要有空行，新开一段。
+    - 如果上一行是普通段落、加粗提示（如 `**定义**：`、`其中：`、`主要性质：`）或引用结束行，也要额外空一行再开始列表。
+    - 使用有序列表（如 `1. 例子`）时，点号后要有空格。
+- 行间公式前后各要有一行空行，否则会被当做是行内公式。
+    - 推荐写法如下：
 
         ```markdown
         这里是上一段文字。
@@ -164,7 +182,7 @@ PDF 文档的摘要
         这里是下一段文字。
         ```
 
-    -   请不要在 `$$` 和公式内容之间再插入空行，也不要在公式结束前额外插入空行。也就是说，应写成
+    - 请不要在 `$$` 和公式内容之间再插入空行，也不要在公式结束前额外插入空行。也就是说，应写成
 
         ```markdown
         $$
@@ -182,36 +200,36 @@ PDF 文档的摘要
         $$
         ```
 
-    -   `mkdocs-material` 当前同时支持 `$...$`、`$$...$$`、`\(...\)`、`\[...\]`，但为了减少歧义，仍建议行间公式统一单独成块书写。
--   请谨慎混用列表、引用与公式：
-    -   不要把行间公式直接写成 `> $$`、`- $$` 这样的形式，这很容易导致公式、列表或引用整体渲染异常。
-    -   如果确实要在引用块或折叠块中放公式，请保证外层块本身的缩进和结构是完整的，再在其中单独空行书写公式。
--   使用 `???` 或 `!!!` 开头的 Details 语法时，每一行要包括在 Details 语法的文本框的文本，开头必须至少有 4 个空格。
-    **即使是空行，也必须保持与其他行一致的缩进。请不要使用编辑器的自动裁剪行末空格功能。**
+    - `mkdocs-material` 当前同时支持 `$...$`、`$$...$$`、`\(...\)`、`\[...\]`，但为了减少歧义，仍建议行间公式统一单独成块书写。
+- 请谨慎混用列表、引用与公式：
+    - 不要把行间公式直接写成 `> $$`、`- $$` 这样的形式，这很容易导致公式、列表或引用整体渲染异常。
+    - 如果确实要在引用块或折叠块中放公式，请保证外层块本身的缩进和结构是完整的，再在其中单独空行书写公式。
+- 使用 `???` 或 `!!!` 开头的 Details 语法时，每一行要包括在 Details 语法的文本框的文本，开头必须至少有 4 个空格。
+    **有内容的行必须保持缩进**（空行可以完全留空，不要留下行尾空格，否则会被 markdownlint 的 MD009 拦下来）。
 
     ???+ success "示例"
         ```text
         ???+ warning
             请记得在文本前面添加 4 个空格。其他的语法还是与 Markdown 语法一致。
-            
+
             不添加 4 个空格的话，文本就不会出现在 Details 文本框里了。
-            
+
             这个`???`是什么的问题会在下文解答。
         ```
-        
+
         ???+ warning
             请记得在文本前面添加 4 个空格。其他的语法还是与 Markdown 语法一致。
-            
+
             不添加 4 个空格的话，文本就不会出现在 Details 文本框里了。
-            
+
             这个 `???` 是什么的问题会在下文解答。
 
--   代码样式的纯文本块请使用 ` ```text`。直接使用 ` ``` ` 而不指定纯文本块里的语言，可能会导致内容被错误地缩进。
--   表示强调时请使用 `**SOMETHING**` 和 `「」`，而非某级标题，因为使用标题会导致文章结构层次混乱和（或）目录出现问题。
+- 代码样式的纯文本块请使用 ` ```text`。直接使用 ` ``` ` 而不指定纯文本块里的语言，可能会导致内容被错误地缩进。
+- 表示强调时请使用 `**SOMETHING**` 和 `「」`，而非某级标题，因为使用标题会导致文章结构层次混乱和（或）目录出现问题。
 
--   当需要引用题目链接时，应尽可能使用原 OJ 题库中的链接而不是镜像链接。
+- 当需要引用题目链接时，应尽可能使用原 OJ 题库中的链接而不是镜像链接。
 
--   请正确使用 Markdown 的区块功能。插入行内代码请使用一对反引号包围代码区块；行间代码请使用一对 ` ``` ` 包围代码区块，其中反引号就是键盘左上角波浪线下面那个符号，行间代码请在第一个 ` ``` ` 的后面加上语言名称（如：` ```cpp`）。
+- 请正确使用 Markdown 的区块功能。插入行内代码请使用一对反引号包围代码区块；行间代码请使用一对 ` ``` ` 包围代码区块，其中反引号就是键盘左上角波浪线下面那个符号，行间代码请在第一个 ` ``` ` 的后面加上语言名称（如：` ```cpp`）。
 
     ???+ success "示例"
         ````text
@@ -220,13 +238,13 @@ PDF 文档的摘要
         #include <cstdio>  //好的写法
         ```
         ````
-        
+
         ```cpp
         // #include<stdio.h>    //不好的写法
         #include <cstdio>  //好的写法
         ```
 
--   「参考资料与注释」使用 Markdown 的脚注功能进行编写。格式为：
+- 「参考资料与注释」使用 Markdown 的脚注功能进行编写。格式为：
 
     ```markdown
     文本内容。[^脚注名]
@@ -240,29 +258,33 @@ PDF 文档的摘要
     ???+ success "示例"
         ```markdown
         当 `#include <cxxxx>` 可以替代 `#include <xxxx.h>` 时，应使用前者。[^ref1]
-        
+
         2020年1月21日，CCF宣布恢复NOIP。[^ref2]
-        
+
         ## 参考资料与注释
-        
+
         [^ref1]: [cstdio stdio.h namespace](https://stackoverflow.com/questions/10460250/cstdio-stdio-h-namespace)
-        
+
         [^ref2]: [CCF关于恢复NOIP竞赛的公告-中国计算机学会](https://www.ccf.org.cn/c/2020-01-21/694716.shtml)
         ```
-        
+
         当 `#include <cxxxx>` 可以替代 `#include <xxxx.h>` 时，应使用前者。[^ref1]
-        
+
         2020 年 1 月 21 日，CCF 宣布恢复 NOIP。[^ref2]
 
--   主题扩展的 `???+note` 格式（即 [Collapsible Blocks](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#collapsible-blocks)），带 `+` 的会默认保持展开，而不带 `+` 的会默认保持折叠。
+- 主题扩展的 `???+note` 格式（即 [Collapsible Blocks](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#collapsible-blocks)），带 `+` 的会默认保持展开，而不带 `+` 的会默认保持折叠。
     折叠框的标题，即 `???+note` 中 `note` 后的内容应以 `"` 包裹起来。其中的内容支持 Markdown 语法。详见 [Admonition - Changing the title](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#changing-the-title)。（不具备折叠功能的为一般的 Admonitions，参考 [Admonitions - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/reference/admonitions)）
 
 如果对 mkdocs-material（我们使用的这个主题）还有什么问题，还可以查阅 [MkDocs 使用说明](https://github.com/ctf-wiki/ctf-wiki/wiki/Mkdocs-%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E)，其介绍了 mkdocs-material 主题的插件使用方式。
 
 考虑到鼓励贡献者的因素，我们不给出更多的限制，关于数学公式、代码等，你可以按照喜欢的样式编写。
 
+<!-- markdownlint-disable MD053 -- 下文示例里的 [^ref2] 位于缩进块内，markdownlint 解析不到引用（但页面上能正常跳转） -->
+
 ## 参考资料与注释
 
 [^ref1]: [cstdio stdio.h namespace](https://stackoverflow.com/questions/10460250/cstdio-stdio-h-namespace)
 
 [^ref2]: [CCF 关于恢复 NOIP 竞赛的公告 - 中国计算机学会](https://www.ccf.org.cn/c/2020-01-21/694716.shtml)
+
+<!-- markdownlint-enable MD053 -->
