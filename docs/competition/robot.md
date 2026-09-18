@@ -2,7 +2,7 @@
 
 - robomaster
 - robocon
-- robocop	
+- robocup	
 
 ## 参赛流程
 
