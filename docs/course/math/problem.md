@@ -2,7 +2,7 @@
 
 ## 2025年高数上期中真题解析
 
-??? note "2013高数上期中试题及解析"
+??? note "2025工科数学分析(上)期中考试真题解析"
     <iframe loading="lazy" src="/static/course/math/problem/2025工科数学分析(上)期中考试真题解析 (1).pdf" type="application/pdf" width=100% height=1000px></iframe>
 
 ## 【AI学组】2023年高数上期中真题解析（定稿）
